@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="picbBelohnung.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picbLogistikRechnerBelohnung.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAatJREFUaEPtluFKxDAQhPsSCj6R+Poq+Cj6TxOuA2Hbud1spqloPxh6zWZnsuQ8
+        DAAACwwBP0AiyAAAAatJREFUaEPtluFKxDAQhPsSCj6R+Poq+Cj6TxOuA2Hbud1spqloPxh6zWZnsuQ8
         XC7+Ad8CvRc9Fp3K3sEy+ih6KjoNHCTLrxlGNcjb+jzta6Ya5KHodf18ys18FSkGqdSbwM3U59SbeS76
         vH1M0Q5SOfVmXtZnBjtIpetmYDAixR8mvCzhYWAwqtHrh88eoa/ZPYMI6K8auZnWx1PN2YBiFvTj+rPD
         wCeqDbQQBP2zfmXoeWkhSNs/Yxh6XloIYvuPHoaelxaC7PUfOQw9Ly0EYf1sGPwHgD5PFrbOC0Hu9SuG
@@ -131,10 +131,10 @@
         a5Ao1yCdTBtklg5jL+xIXfxhluUH5X5VnbH1xLYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="picbVersicherung.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picbLogistikRechnerVersicherung.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAatJREFUaEPtluFKxDAQhPsSCj6R+Poq+Cj6TxOuA2Hbud1spqloPxh6zWZnsuQ8
+        DAAACwwBP0AiyAAAAatJREFUaEPtluFKxDAQhPsSCj6R+Poq+Cj6TxOuA2Hbud1spqloPxh6zWZnsuQ8
         XC7+Ad8CvRc9Fp3K3sEy+ih6KjoNHCTLrxlGNcjb+jzta6Ya5KHodf18ys18FSkGqdSbwM3U59SbeS76
         vH1M0Q5SOfVmXtZnBjtIpetmYDAixR8mvCzhYWAwqtHrh88eoa/ZPYMI6K8auZnWx1PN2YBiFvTj+rPD
         wCeqDbQQBP2zfmXoeWkhSNs/Yxh6XloIYvuPHoaelxaC7PUfOQw9Ly0EYf1sGPwHgD5PFrbOC0Hu9SuG
@@ -144,10 +144,10 @@
         a5Ao1yCdTBtklg5jL+xIXfxhluUH5X5VnbH1xLYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="picbGesamtkubik.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picbLogistikRechnerGesamtkubik.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAatJREFUaEPtluFKxDAQhPsSCj6R+Poq+Cj6TxOuA2Hbud1spqloPxh6zWZnsuQ8
+        DAAACwwBP0AiyAAAAatJREFUaEPtluFKxDAQhPsSCj6R+Poq+Cj6TxOuA2Hbud1spqloPxh6zWZnsuQ8
         XC7+Ad8CvRc9Fp3K3sEy+ih6KjoNHCTLrxlGNcjb+jzta6Ya5KHodf18ys18FSkGqdSbwM3U59SbeS76
         vH1M0Q5SOfVmXtZnBjtIpetmYDAixR8mvCzhYWAwqtHrh88eoa/ZPYMI6K8auZnWx1PN2YBiFvTj+rPD
         wCeqDbQQBP2zfmXoeWkhSNs/Yxh6XloIYvuPHoaelxaC7PUfOQw9Ly0EYf1sGPwHgD5PFrbOC0Hu9SuG

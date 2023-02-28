@@ -1,9 +1,11 @@
 ﻿using GEMEC_Logistics.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GEMEC_Logistics
@@ -27,7 +29,7 @@ namespace GEMEC_Logistics
         {
             setValuesToZero();
 
-            if (txtTransportItems.Text != "")
+            if (txtLogistikRechnerTransportItems.Text != "")
             {
                if (getValuesForTextboxes() == false)
                 {
@@ -40,14 +42,14 @@ namespace GEMEC_Logistics
                 MessageBox.Show("Trag was beim Transport ein du Depp!","Transport Items fehlen",MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            txtBelohnung.Text = gesamtBelohnung.ToString();
-            txtGesamtkubikmeter.Text = gesamtKubikmeter.ToString();
-            txtVersicherung.Text = gesamtVersicherung.ToString();
+            txtLogistikRechnerBelohnung.Text = gesamtBelohnung.ToString();
+            txtLogistikRechnerGesamtkubikmeter.Text = gesamtKubikmeter.ToString();
+            txtLogistikRechnerVersicherung.Text = gesamtVersicherung.ToString();
         }
 
         private bool getValuesForTextboxes()
         {
-            string[] items = txtTransportItems.Lines.ToArray();
+            string[] items = txtLogistikRechnerTransportItems.Lines.ToArray();
             string seperator = "\t";
             
             try
@@ -101,17 +103,17 @@ namespace GEMEC_Logistics
 
         private void picbBelohnung_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(txtBelohnung.Text);
+            Clipboard.SetText(txtLogistikRechnerBelohnung.Text);
         }
 
         private void picbVersicherung_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(txtVersicherung.Text);
+            Clipboard.SetText(txtLogistikRechnerVersicherung.Text);
         }
 
         private void picbGesamtkubik_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(txtGesamtkubikmeter.Text);
+            Clipboard.SetText(txtLogistikRechnerGesamtkubikmeter.Text);
         }
 
         private void setTooltipForItem(string tooltipText, Control controlItem)
@@ -125,7 +127,7 @@ namespace GEMEC_Logistics
 
         private void picbBelohnung_MouseHover(object sender, EventArgs e)
         {
-            setTooltipForItem("Belohnung kopieren", this.picbBelohnung);
+            setTooltipForItem("Belohnung kopieren", this.picbLogistikRechnerBelohnung);
         }
 
         private void picbBelohnung_MouseLeave(object sender, EventArgs e)
@@ -135,7 +137,7 @@ namespace GEMEC_Logistics
 
         private void picbVersicherung_MouseHover(object sender, EventArgs e)
         {
-            setTooltipForItem("Versicherung kopieren", this.picbVersicherung);
+            setTooltipForItem("Versicherung kopieren", this.picbLogistikRechnerVersicherung);
         }
 
         private void picbVersicherung_MouseLeave(object sender, EventArgs e)
@@ -145,7 +147,7 @@ namespace GEMEC_Logistics
 
         private void picbGesamtkubik_MouseHover(object sender, EventArgs e)
         {
-            setTooltipForItem("Gesamt Kubikmeter kopieren", this.picbGesamtkubik);
+            setTooltipForItem("Gesamt Kubikmeter kopieren", this.picbLogistikRechnerGesamtkubik);
         }
 
         private void picbGesamtkubik_MouseLeave(object sender, EventArgs e)
@@ -162,13 +164,56 @@ namespace GEMEC_Logistics
         {
             eveItemValueIDs = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "typeids.csv")).Select(itm => EvEValues.FromCsv(itm)).ToList();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            getItemPrice();
+        }
+
+        private async void getItemPrice()
+        {
+            List<int> searchItemIDs = await getItemIDsByItemName();
+
+            if (searchItemIDs.Count != 0)
+            {
+                //TODO: Nur zum testen hinzugefügt. Muss gelöscht werden!!!!
+                searchItemIDs.Add(256);
+
+                EvEMarketerAPI eveMarketerInstance = new EvEMarketerAPI();
+                try
+                {
+                    await eveMarketerInstance.getItemPricesAsync(searchItemIDs);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    throw;
+                }
+                
+            }
+            
+        }
+
+        private async Task<List<int>> getItemIDsByItemName()
+        {
+            List<int> itemIDs = new List<int>();
+
+            var result = eveItemValueIDs.Where(itm => itm.itemName == txtPreisvergleichItem.Text);
+            
+            foreach ( var item in result )
+            {
+                itemIDs.Add(item.typeID);
+            }
+
+            return itemIDs;
+        }
     }
 
     public class EvEValues
     {
-        int ID;
-        string itemName;
-        int typeID;
+        public int ID { get; set; }
+        public string itemName { get; set; }
+        public int typeID { get; set; }
 
         public static EvEValues FromCsv(string csvLine)
         {
