@@ -1,15 +1,10 @@
-﻿using System;
+﻿using GEMEC_Logistics.Models;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Globalization;
+using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace GEMEC_Logistics
 {
@@ -19,6 +14,9 @@ namespace GEMEC_Logistics
         decimal gesamtBelohnung = 0;
         decimal gesamtKubikmeter = 0;
         decimal gesamtVersicherung = 0;
+
+        List<EvEValues> eveItemValueIDs = new List<EvEValues>();
+        
 
         public Form1()
         {
@@ -154,5 +152,34 @@ namespace GEMEC_Logistics
         {
             toolTip1.RemoveAll();
         }
-    } 
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            getEvEValueList();
+        }
+
+        private void getEvEValueList()
+        {
+            eveItemValueIDs = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "typeids.csv")).Select(itm => EvEValues.FromCsv(itm)).ToList();
+        }
+    }
+
+    public class EvEValues
+    {
+        int ID;
+        string itemName;
+        int typeID;
+
+        public static EvEValues FromCsv(string csvLine)
+        {
+            string[] stringSeparators = new string[] { "\",\"" };
+            string[] values = csvLine.Split(stringSeparators, StringSplitOptions.None);
+            EvEValues itemInfos = new EvEValues();
+            itemInfos.ID = Convert.ToInt32(values[0].Replace("\"", ""));
+            itemInfos.itemName = Convert.ToString(values[1].Replace("\"", ""));
+            itemInfos.typeID = Convert.ToInt32(values[2].Replace("\"", ""));
+
+            return itemInfos;
+        }
+    }
 }
