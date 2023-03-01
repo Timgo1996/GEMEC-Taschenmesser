@@ -29,11 +29,12 @@ namespace GEMEC_Logistics
         }
 
         /// <summary>
-        /// 
+        /// Get multiple items with price informations
         /// </summary>
         /// <param name="TypeIDs">Type ID's of the item to search the price for</param>
         /// <param name="Usesystem">Standard Value for Jita</param>
-        public async Task<RootEvEItem> getItemPricesAsync(List<int> TypeIDs, int Usesystem = 30000142)
+        /// <returns></returns>
+        public async Task<GEMEC_Logistics.Models.MultipleItems.RootEvEItem> getMultipleItemPricesAsync(List<int> TypeIDs, int Usesystem = 30000142)
         {
             await setBaseValues();
             string buildedURI = client.BaseAddress.ToString();
@@ -51,7 +52,35 @@ namespace GEMEC_Logistics
             doc.LoadXml(response);
             string jsonString = JsonConvert.SerializeXmlNode(doc);
 
-            return JsonConvert.DeserializeObject<RootEvEItem>(jsonString);
+            return JsonConvert.DeserializeObject<GEMEC_Logistics.Models.MultipleItems.RootEvEItem>(jsonString);
+        }
+
+
+        /// <summary>
+        /// Get single item with price informations
+        /// </summary>
+        /// <param name="TypeIDs">Type ID's of the item to search the price for</param>
+        /// <param name="Usesystem">Standard Value for Jita</param>
+        /// <returns></returns>
+        public async Task<GEMEC_Logistics.Models.SingleItem.RootEvEItem> getSingleItemPricesAsync(List<int> TypeIDs, int Usesystem = 30000142)
+        {
+            await setBaseValues();
+            string buildedURI = client.BaseAddress.ToString();
+
+            buildedURI += $"/marketstat?typeid=";
+            for (int i = 0; i < TypeIDs.Count - 1; i++)
+            {
+                buildedURI += TypeIDs[i].ToString() + ",";
+            }
+            buildedURI += TypeIDs[TypeIDs.Count - 1].ToString() + $"&usesystem=" + Usesystem.ToString();
+
+            var response = await client.GetStringAsync(buildedURI);
+
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml(response);
+            string jsonString = JsonConvert.SerializeXmlNode(doc);
+
+            return JsonConvert.DeserializeObject<GEMEC_Logistics.Models.SingleItem.RootEvEItem>(jsonString);
         }
 
     }

@@ -176,13 +176,10 @@ namespace GEMEC_Logistics
 
             if (searchItemIDs.Count != 0)
             {
-                //TODO: Nur zum testen hinzugefügt. Muss gelöscht werden!!!!
-                searchItemIDs.Add(256);
-
                 EvEMarketerAPI eveMarketerInstance = new EvEMarketerAPI();
                 try
                 {
-                    await eveMarketerInstance.getItemPricesAsync(searchItemIDs);
+                    await eveMarketerInstance.getSingleItemPricesAsync(searchItemIDs);
                 }
                 catch (Exception ex)
                 {

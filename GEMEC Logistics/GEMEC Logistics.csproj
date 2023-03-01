@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="Models\ApiCallEvEMarketer.cs" />
     <Compile Include="Models\ApiCallEvEMultipleObject.cs" />
+    <Compile Include="Models\ApiCallEvESingleObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

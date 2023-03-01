@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GEMEC_Logistics.Models.MultipleItems
+namespace GEMEC_Logistics.Models.SingleItem
 {
     public class Buy
     {
@@ -30,7 +30,7 @@ namespace GEMEC_Logistics.Models.MultipleItems
 
     public class Marketstat
     {
-        public List<Type> type { get; set; }
+        public Type type { get; set; }
     }
 
     public class RootEvEItem
@@ -67,5 +67,4 @@ namespace GEMEC_Logistics.Models.MultipleItems
         [JsonProperty("@encoding")]
         public string encoding { get; set; }
     }
-
 }
