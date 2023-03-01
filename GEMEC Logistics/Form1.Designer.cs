@@ -54,6 +54,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtPreisvergleichItem = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerBelohnung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerVersicherung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerGesamtkubik)).BeginInit();
@@ -246,7 +248,7 @@
             // btnPreisvergleichVergleich
             // 
             this.btnPreisvergleichVergleich.Location = new System.Drawing.Point(6, 100);
-            this.btnPreisvergleichVergleich.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnPreisvergleichVergleich.Margin = new System.Windows.Forms.Padding(1);
             this.btnPreisvergleichVergleich.Name = "btnPreisvergleichVergleich";
             this.btnPreisvergleichVergleich.Size = new System.Drawing.Size(134, 26);
             this.btnPreisvergleichVergleich.TabIndex = 15;
@@ -262,7 +264,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(800, 400);
@@ -286,9 +288,9 @@
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.txtLogistikRechnerGesamtkubikmeter);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(1);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(1);
             this.tabPage1.Size = new System.Drawing.Size(792, 374);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "LogistikRechner";
@@ -296,15 +298,17 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.DimGray;
+            this.tabPage2.Controls.Add(this.comboBox2);
+            this.tabPage2.Controls.Add(this.comboBox1);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.txtPreisvergleichItem);
             this.tabPage2.Controls.Add(this.btnPreisvergleichVergleich);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(1);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(1);
             this.tabPage2.Size = new System.Drawing.Size(792, 374);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Preisvergleich";
@@ -312,7 +316,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(403, 36);
+            this.label10.Location = new System.Drawing.Point(398, 41);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(75, 13);
@@ -322,7 +326,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 37);
+            this.label9.Location = new System.Drawing.Point(2, 41);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(67, 13);
@@ -346,6 +350,22 @@
             this.txtPreisvergleichItem.Name = "txtPreisvergleichItem";
             this.txtPreisvergleichItem.Size = new System.Drawing.Size(719, 20);
             this.txtPreisvergleichItem.TabIndex = 16;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(71, 38);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(310, 21);
+            this.comboBox1.TabIndex = 20;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(478, 38);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(311, 21);
+            this.comboBox2.TabIndex = 21;
             // 
             // Form1
             // 
@@ -398,6 +418,8 @@
         private System.Windows.Forms.TextBox txtPreisvergleichItem;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

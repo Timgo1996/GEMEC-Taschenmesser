@@ -42,9 +42,9 @@ namespace GEMEC_Logistics
                 MessageBox.Show("Trag was beim Transport ein du Depp!","Transport Items fehlen",MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            txtLogistikRechnerBelohnung.Text = gesamtBelohnung.ToString();
-            txtLogistikRechnerGesamtkubikmeter.Text = gesamtKubikmeter.ToString();
-            txtLogistikRechnerVersicherung.Text = gesamtVersicherung.ToString();
+            txtLogistikRechnerBelohnung.Text = gesamtBelohnung.ToString().Replace(",",".");
+            txtLogistikRechnerGesamtkubikmeter.Text = gesamtKubikmeter.ToString().Replace(",", ".");
+            txtLogistikRechnerVersicherung.Text = gesamtVersicherung.ToString().Replace(",", ".");
         }
 
         private bool getValuesForTextboxes()
