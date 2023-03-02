@@ -184,16 +184,16 @@ namespace GEMEC_Logistics
         {
             List<int> searchItemIDs = await getItemIDsByItemName();
             List<Models.SingleItem.RootEvEItem> eveItemInfos = new List<Models.SingleItem.RootEvEItem>();
-            EvEMarketerAPI eveMarketerInstanceMarktEins = new EvEMarketerAPI();
-            EvEMarketerAPI eveMarketerInstanceMarktZwei = new EvEMarketerAPI();
+            EvEMarketerAPI eveMarketerInstance = new EvEMarketerAPI();
 
                 if (searchItemIDs.Count != 0 && stationIDs.Count == 2)
                 {
-                    
                     try
                     {
-                        eveItemInfos.Add(await eveMarketerInstanceMarktEins.getSingleItemPricesAsync(searchItemIDs, stationIDs[0]));
-                        eveItemInfos.Add(await eveMarketerInstanceMarktZwei.getSingleItemPricesAsync(searchItemIDs, stationIDs[1]));
+                        foreach (var stationID in stationIDs)
+                        {
+                            eveItemInfos.Add(await eveMarketerInstance.getSingleItemPricesAsync(searchItemIDs, stationID));
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -212,8 +212,14 @@ namespace GEMEC_Logistics
         {
             List<int> stationIDs = await getStationNameByStationID();
 
-            List<Models.SingleItem.RootEvEItem> marktEinsItemInfos = await getItemPriceToCompareData(stationIDs);
-
+            if(stationIDs.Count != 0 && stationIDs != null)
+            {
+                List<Models.SingleItem.RootEvEItem> marktEinsItemInfos = await getItemPriceToCompareData(stationIDs);
+            } 
+            else
+            {
+                MessageBox.Show("Ein Fehler ist aufgetreten. Ihre Daten konnten nicht verglichen werden!", "Daten konnten nicht verglichen werden", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private async Task<List<int>> getStationNameByStationID()
@@ -223,8 +229,15 @@ namespace GEMEC_Logistics
             var marktEinsResult = eveStationValueIDs.Where(itm => itm.stationName == cbPreisvergleichMarktEins.Text).FirstOrDefault();
             var marktZweiResult = eveStationValueIDs.Where(itm => itm.stationName == cbPreisvergleichMarktZwei.Text).FirstOrDefault();
 
-            itemIDs.Add(marktEinsResult.ID);
-            itemIDs.Add(marktZweiResult.ID);
+            if (marktEinsResult != null && marktZweiResult != null)
+            {
+                itemIDs.Add(marktEinsResult.ID);
+                itemIDs.Add(marktZweiResult.ID);
+            } else
+            {
+                MessageBox.Show("Bitte wählen Sie nur eine verfügbare Station aus. Zu mindestens einer deiner ausgewählten Stationen liegen uns keine Daten vor.");
+                return null;
+            }
 
             return itemIDs;
         }
