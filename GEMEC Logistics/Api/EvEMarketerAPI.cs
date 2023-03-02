@@ -16,16 +16,17 @@ namespace GEMEC_Logistics
 {
     public class EvEMarketerAPI
     {
-        static HttpClient client = new HttpClient();
+        static HttpClient client;
 
-        public async Task<bool> setBaseValues()
+        public void setBaseValues()
         {
             //Set base information
+            client = new HttpClient();
+            client.Timeout = TimeSpan.FromSeconds(30);
             client.BaseAddress = new Uri($"https://api.evemarketer.com/ec/");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
-            return true;
         }
 
         /// <summary>
@@ -36,7 +37,7 @@ namespace GEMEC_Logistics
         /// <returns></returns>
         public async Task<GEMEC_Logistics.Models.MultipleItems.RootEvEItem> getMultipleItemPricesAsync(List<int> TypeIDs, int Usesystem = 30000142)
         {
-            await setBaseValues();
+            setBaseValues();
             string buildedURI = client.BaseAddress.ToString();
 
             buildedURI += $"/marketstat?typeid=";
@@ -64,7 +65,7 @@ namespace GEMEC_Logistics
         /// <returns></returns>
         public async Task<GEMEC_Logistics.Models.SingleItem.RootEvEItem> getSingleItemPricesAsync(List<int> TypeIDs, int Usesystem = 30000142)
         {
-            await setBaseValues();
+            setBaseValues();
             string buildedURI = client.BaseAddress.ToString();
 
             buildedURI += $"/marketstat?typeid=";
@@ -75,7 +76,7 @@ namespace GEMEC_Logistics
             buildedURI += TypeIDs[TypeIDs.Count - 1].ToString() + $"&usesystem=" + Usesystem.ToString();
 
             var response = await client.GetStringAsync(buildedURI);
-
+            
             XmlDocument doc = new XmlDocument();
             doc.LoadXml(response);
             string jsonString = JsonConvert.SerializeXmlNode(doc);

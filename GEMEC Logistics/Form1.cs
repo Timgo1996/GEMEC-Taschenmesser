@@ -17,8 +17,8 @@ namespace GEMEC_Logistics
         decimal gesamtKubikmeter = 0;
         decimal gesamtVersicherung = 0;
 
-        List<EvEValues> eveItemValueIDs = new List<EvEValues>();
-        
+        List<EvEItemValues> eveItemValueIDs = new List<EvEItemValues>();
+        List<EvEStationValues> eveStationValueIDs = new List<EvEStationValues>();
 
         public Form1()
         {
@@ -157,38 +157,76 @@ namespace GEMEC_Logistics
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            getEvEValueList();
+            getEvECsvData();
         }
 
-        private void getEvEValueList()
+        private void getEvECsvData()
         {
-            eveItemValueIDs = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "typeids.csv")).Select(itm => EvEValues.FromCsv(itm)).ToList();
+            eveItemValueIDs = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "Data//typeids.csv")).Select(itm => EvEItemValues.FromCsv(itm)).ToList();
+            eveStationValueIDs = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "Data//stationids.csv")).Select(itm => EvEStationValues.FromCsv(itm)).ToList();
+
+            foreach (var station in eveStationValueIDs)
+            {
+                cbPreisvergleichMarktEins.Items.Add(station.stationName);
+                cbPreisvergleichMarktZwei.Items.Add(station.stationName);
+            }
+
+            cbPreisvergleichMarktEins.SelectedIndex = 0;
+            cbPreisvergleichMarktZwei.SelectedIndex = 1;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            getItemPrice();
+            getDataToCompare();
         }
 
-        private async void getItemPrice()
+        private async Task<List<Models.SingleItem.RootEvEItem>> getItemPriceToCompareData(List<int> stationIDs)
         {
             List<int> searchItemIDs = await getItemIDsByItemName();
+            List<Models.SingleItem.RootEvEItem> eveItemInfos = new List<Models.SingleItem.RootEvEItem>();
+            EvEMarketerAPI eveMarketerInstanceMarktEins = new EvEMarketerAPI();
+            EvEMarketerAPI eveMarketerInstanceMarktZwei = new EvEMarketerAPI();
 
-            if (searchItemIDs.Count != 0)
-            {
-                EvEMarketerAPI eveMarketerInstance = new EvEMarketerAPI();
-                try
+                if (searchItemIDs.Count != 0 && stationIDs.Count == 2)
                 {
-                    await eveMarketerInstance.getSingleItemPricesAsync(searchItemIDs);
+                    
+                    try
+                    {
+                        eveItemInfos.Add(await eveMarketerInstanceMarktEins.getSingleItemPricesAsync(searchItemIDs, stationIDs[0]));
+                        eveItemInfos.Add(await eveMarketerInstanceMarktZwei.getSingleItemPricesAsync(searchItemIDs, stationIDs[1]));
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        throw;
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
-                    throw;
+                    return null;
                 }
-                
-            }
-            
+            return eveItemInfos;
+        }
+        
+        private async void getDataToCompare()
+        {
+            List<int> stationIDs = await getStationNameByStationID();
+
+            List<Models.SingleItem.RootEvEItem> marktEinsItemInfos = await getItemPriceToCompareData(stationIDs);
+
+        }
+
+        private async Task<List<int>> getStationNameByStationID()
+        {
+            List<int> itemIDs = new List<int>();
+
+            var marktEinsResult = eveStationValueIDs.Where(itm => itm.stationName == cbPreisvergleichMarktEins.Text).FirstOrDefault();
+            var marktZweiResult = eveStationValueIDs.Where(itm => itm.stationName == cbPreisvergleichMarktZwei.Text).FirstOrDefault();
+
+            itemIDs.Add(marktEinsResult.ID);
+            itemIDs.Add(marktZweiResult.ID);
+
+            return itemIDs;
         }
 
         private async Task<List<int>> getItemIDsByItemName()
@@ -206,22 +244,39 @@ namespace GEMEC_Logistics
         }
     }
 
-    public class EvEValues
+    public class EvEItemValues
     {
         public int ID { get; set; }
         public string itemName { get; set; }
         public int typeID { get; set; }
 
-        public static EvEValues FromCsv(string csvLine)
+        public static EvEItemValues FromCsv(string csvLine)
         {
             string[] stringSeparators = new string[] { "\",\"" };
             string[] values = csvLine.Split(stringSeparators, StringSplitOptions.None);
-            EvEValues itemInfos = new EvEValues();
+            EvEItemValues itemInfos = new EvEItemValues();
             itemInfos.ID = Convert.ToInt32(values[0].Replace("\"", ""));
             itemInfos.itemName = Convert.ToString(values[1].Replace("\"", ""));
             itemInfos.typeID = Convert.ToInt32(values[2].Replace("\"", ""));
 
             return itemInfos;
+        }
+    }
+
+    public class EvEStationValues
+    {
+        public int ID { get; set; }
+        public string stationName { get; set; }
+
+        public static EvEStationValues FromCsv(string csvLine)
+        {
+            string[] stringSeparators = new string[] { "," };
+            string[] values = csvLine.Split(stringSeparators, StringSplitOptions.None);
+            EvEStationValues stationInfos = new EvEStationValues();
+            stationInfos.ID = Convert.ToInt32(values[0]);
+            stationInfos.stationName = Convert.ToString(values[1]);
+
+            return stationInfos;
         }
     }
 }
