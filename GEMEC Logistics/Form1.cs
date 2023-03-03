@@ -72,6 +72,10 @@ namespace GEMEC_Logistics
                         gesamtVersicherung += decimal.Parse(itemValues[itemValues.Length - 1].Replace("ISK", ""));
                         gesamtKubikmeter += decimal.Parse(itemValues[itemValues.Length - 2].Replace("m3", ""));
                     }
+                    else if (itemValues[itemValues.Length - 1].Contains("m3") && itemValues[1].EndsWith("Blueprint*"))
+                    {
+                        MessageBox.Show("Blueprint " + itemValues[0] + " erkannt. Diese wird nicht mit in die Berechnung für die Versicherungssume berücksichtigt. Der Wert muss ggf. manuell auf auf die Versicherung aufberechnet werden.", "Blueprint erkannt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                     else
                     {
                         return false;
