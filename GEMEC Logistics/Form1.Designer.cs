@@ -58,8 +58,46 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblBuyOne = new System.Windows.Forms.Label();
+            this.lblBuySecond = new System.Windows.Forms.Label();
+            this.lblSellSecond = new System.Windows.Forms.Label();
+            this.lblSellOne = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellAvgSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellAvgOne = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyAvgSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyAvgOne = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellStddevSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellStddevOne = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyStddevSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyStddevOne = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellPercentileSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellPercentileOne = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyPercentileSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyPercentileOne = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellMedianSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellMedianOne = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyMedianSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyMedianOne = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellMinSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellMinOne = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyMinSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyMinOne = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellMaxSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichSellMaxOne = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyMaxSecond = new System.Windows.Forms.Label();
+            this.lblPreisvergleichBuyMaxOne = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerBelohnung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerVersicherung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerGesamtkubik)).BeginInit();
@@ -252,7 +290,7 @@
             // btnPreisvergleichVergleich
             // 
             this.btnPreisvergleichVergleich.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPreisvergleichVergleich.Location = new System.Drawing.Point(407, 26);
+            this.btnPreisvergleichVergleich.Location = new System.Drawing.Point(399, 26);
             this.btnPreisvergleichVergleich.Margin = new System.Windows.Forms.Padding(1);
             this.btnPreisvergleichVergleich.Name = "btnPreisvergleichVergleich";
             this.btnPreisvergleichVergleich.Size = new System.Drawing.Size(119, 26);
@@ -303,8 +341,46 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.DimGray;
-            this.tabPage2.Controls.Add(this.label12);
-            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellMinSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellMinOne);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyMinSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyMinOne);
+            this.tabPage2.Controls.Add(this.label53);
+            this.tabPage2.Controls.Add(this.label54);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellMaxSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellMaxOne);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyMaxSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyMaxOne);
+            this.tabPage2.Controls.Add(this.label61);
+            this.tabPage2.Controls.Add(this.label62);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellPercentileSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellPercentileOne);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyPercentileSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyPercentileOne);
+            this.tabPage2.Controls.Add(this.label37);
+            this.tabPage2.Controls.Add(this.label38);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellMedianSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellMedianOne);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyMedianSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyMedianOne);
+            this.tabPage2.Controls.Add(this.label45);
+            this.tabPage2.Controls.Add(this.label46);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellStddevSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellStddevOne);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyStddevSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyStddevOne);
+            this.tabPage2.Controls.Add(this.label29);
+            this.tabPage2.Controls.Add(this.label30);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellAvgSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichSellAvgOne);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyAvgSecond);
+            this.tabPage2.Controls.Add(this.lblPreisvergleichBuyAvgOne);
+            this.tabPage2.Controls.Add(this.label17);
+            this.tabPage2.Controls.Add(this.label18);
+            this.tabPage2.Controls.Add(this.lblSellSecond);
+            this.tabPage2.Controls.Add(this.lblSellOne);
+            this.tabPage2.Controls.Add(this.lblBuySecond);
+            this.tabPage2.Controls.Add(this.lblBuyOne);
             this.tabPage2.Controls.Add(this.cbPreisvergleichItem);
             this.tabPage2.Controls.Add(this.lblPreisvergleichMarktZwei);
             this.tabPage2.Controls.Add(this.lblPreisvergleichMarktEins);
@@ -1625,28 +1701,31 @@
             this.cbPreisvergleichItem.Location = new System.Drawing.Point(80, 8);
             this.cbPreisvergleichItem.Margin = new System.Windows.Forms.Padding(1);
             this.cbPreisvergleichItem.Name = "cbPreisvergleichItem";
-            this.cbPreisvergleichItem.Size = new System.Drawing.Size(323, 21);
+            this.cbPreisvergleichItem.Size = new System.Drawing.Size(315, 21);
             this.cbPreisvergleichItem.TabIndex = 24;
+            this.cbPreisvergleichItem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbPreisvergleichItem_KeyDown);
             // 
             // lblPreisvergleichMarktZwei
             // 
             this.lblPreisvergleichMarktZwei.AutoSize = true;
-            this.lblPreisvergleichMarktZwei.Location = new System.Drawing.Point(396, 93);
+            this.lblPreisvergleichMarktZwei.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichMarktZwei.Location = new System.Drawing.Point(393, 88);
             this.lblPreisvergleichMarktZwei.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPreisvergleichMarktZwei.Name = "lblPreisvergleichMarktZwei";
-            this.lblPreisvergleichMarktZwei.Size = new System.Drawing.Size(41, 13);
+            this.lblPreisvergleichMarktZwei.Size = new System.Drawing.Size(159, 13);
             this.lblPreisvergleichMarktZwei.TabIndex = 23;
-            this.lblPreisvergleichMarktZwei.Text = "label12";
+            this.lblPreisvergleichMarktZwei.Text = "lblPreisvergleichMarktZwei";
             // 
             // lblPreisvergleichMarktEins
             // 
             this.lblPreisvergleichMarktEins.AutoSize = true;
-            this.lblPreisvergleichMarktEins.Location = new System.Drawing.Point(9, 93);
+            this.lblPreisvergleichMarktEins.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichMarktEins.Location = new System.Drawing.Point(6, 88);
             this.lblPreisvergleichMarktEins.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPreisvergleichMarktEins.Name = "lblPreisvergleichMarktEins";
-            this.lblPreisvergleichMarktEins.Size = new System.Drawing.Size(41, 13);
+            this.lblPreisvergleichMarktEins.Size = new System.Drawing.Size(156, 13);
             this.lblPreisvergleichMarktEins.TabIndex = 22;
-            this.lblPreisvergleichMarktEins.Text = "label11";
+            this.lblPreisvergleichMarktEins.Text = "lblPreisvergleichMarktEins";
             // 
             // cbPreisvergleichMarktZwei
             // 
@@ -1656,7 +1735,7 @@
             this.cbPreisvergleichMarktZwei.FormattingEnabled = true;
             this.cbPreisvergleichMarktZwei.Location = new System.Drawing.Point(80, 53);
             this.cbPreisvergleichMarktZwei.Name = "cbPreisvergleichMarktZwei";
-            this.cbPreisvergleichMarktZwei.Size = new System.Drawing.Size(323, 21);
+            this.cbPreisvergleichMarktZwei.Size = new System.Drawing.Size(315, 21);
             this.cbPreisvergleichMarktZwei.TabIndex = 21;
             this.cbPreisvergleichMarktZwei.SelectedIndexChanged += new System.EventHandler(this.cbPreisvergleichMarktZwei_SelectedIndexChanged);
             // 
@@ -1668,7 +1747,7 @@
             this.cbPreisvergleichMarktEins.FormattingEnabled = true;
             this.cbPreisvergleichMarktEins.Location = new System.Drawing.Point(80, 30);
             this.cbPreisvergleichMarktEins.Name = "cbPreisvergleichMarktEins";
-            this.cbPreisvergleichMarktEins.Size = new System.Drawing.Size(323, 21);
+            this.cbPreisvergleichMarktEins.Size = new System.Drawing.Size(315, 21);
             this.cbPreisvergleichMarktEins.TabIndex = 20;
             this.cbPreisvergleichMarktEins.SelectedIndexChanged += new System.EventHandler(this.cbPreisvergleichMarktEins_SelectedIndexChanged);
             // 
@@ -1702,23 +1781,405 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Item:";
             // 
-            // label11
+            // lblBuyOne
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(9, 123);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 13);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "label11";
+            this.lblBuyOne.AutoSize = true;
+            this.lblBuyOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuyOne.Location = new System.Drawing.Point(9, 108);
+            this.lblBuyOne.Name = "lblBuyOne";
+            this.lblBuyOne.Size = new System.Drawing.Size(41, 16);
+            this.lblBuyOne.TabIndex = 25;
+            this.lblBuyOne.Text = "Kauf:";
             // 
-            // label12
+            // lblBuySecond
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(396, 123);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "label12";
+            this.lblBuySecond.AutoSize = true;
+            this.lblBuySecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuySecond.Location = new System.Drawing.Point(396, 108);
+            this.lblBuySecond.Name = "lblBuySecond";
+            this.lblBuySecond.Size = new System.Drawing.Size(41, 16);
+            this.lblBuySecond.TabIndex = 26;
+            this.lblBuySecond.Text = "Kauf:";
+            // 
+            // lblSellSecond
+            // 
+            this.lblSellSecond.AutoSize = true;
+            this.lblSellSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSellSecond.Location = new System.Drawing.Point(587, 108);
+            this.lblSellSecond.Name = "lblSellSecond";
+            this.lblSellSecond.Size = new System.Drawing.Size(64, 16);
+            this.lblSellSecond.TabIndex = 28;
+            this.lblSellSecond.Text = "Verkauf:";
+            // 
+            // lblSellOne
+            // 
+            this.lblSellOne.AutoSize = true;
+            this.lblSellOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSellOne.Location = new System.Drawing.Point(200, 108);
+            this.lblSellOne.Name = "lblSellOne";
+            this.lblSellOne.Size = new System.Drawing.Size(64, 16);
+            this.lblSellOne.TabIndex = 27;
+            this.lblSellOne.Text = "Verkauf:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(395, 133);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(95, 16);
+            this.label17.TabIndex = 30;
+            this.label17.Text = "Durchschnitt:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(8, 133);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(95, 16);
+            this.label18.TabIndex = 29;
+            this.label18.Text = "Durchschnitt:";
+            // 
+            // lblPreisvergleichSellAvgSecond
+            // 
+            this.lblPreisvergleichSellAvgSecond.AutoSize = true;
+            this.lblPreisvergleichSellAvgSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellAvgSecond.Location = new System.Drawing.Point(586, 149);
+            this.lblPreisvergleichSellAvgSecond.Name = "lblPreisvergleichSellAvgSecond";
+            this.lblPreisvergleichSellAvgSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellAvgSecond.TabIndex = 36;
+            this.lblPreisvergleichSellAvgSecond.Text = "...";
+            // 
+            // lblPreisvergleichSellAvgOne
+            // 
+            this.lblPreisvergleichSellAvgOne.AutoSize = true;
+            this.lblPreisvergleichSellAvgOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellAvgOne.Location = new System.Drawing.Point(199, 149);
+            this.lblPreisvergleichSellAvgOne.Name = "lblPreisvergleichSellAvgOne";
+            this.lblPreisvergleichSellAvgOne.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellAvgOne.TabIndex = 35;
+            this.lblPreisvergleichSellAvgOne.Text = "...";
+            // 
+            // lblPreisvergleichBuyAvgSecond
+            // 
+            this.lblPreisvergleichBuyAvgSecond.AutoSize = true;
+            this.lblPreisvergleichBuyAvgSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyAvgSecond.Location = new System.Drawing.Point(395, 149);
+            this.lblPreisvergleichBuyAvgSecond.Name = "lblPreisvergleichBuyAvgSecond";
+            this.lblPreisvergleichBuyAvgSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichBuyAvgSecond.TabIndex = 34;
+            this.lblPreisvergleichBuyAvgSecond.Text = "...";
+            // 
+            // lblPreisvergleichBuyAvgOne
+            // 
+            this.lblPreisvergleichBuyAvgOne.AutoSize = true;
+            this.lblPreisvergleichBuyAvgOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyAvgOne.Location = new System.Drawing.Point(8, 149);
+            this.lblPreisvergleichBuyAvgOne.Name = "lblPreisvergleichBuyAvgOne";
+            this.lblPreisvergleichBuyAvgOne.Size = new System.Drawing.Size(22, 16);
+            this.lblPreisvergleichBuyAvgOne.TabIndex = 33;
+            this.lblPreisvergleichBuyAvgOne.Text = "  ...";
+            // 
+            // lblPreisvergleichSellStddevSecond
+            // 
+            this.lblPreisvergleichSellStddevSecond.AutoSize = true;
+            this.lblPreisvergleichSellStddevSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellStddevSecond.Location = new System.Drawing.Point(587, 191);
+            this.lblPreisvergleichSellStddevSecond.Name = "lblPreisvergleichSellStddevSecond";
+            this.lblPreisvergleichSellStddevSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellStddevSecond.TabIndex = 44;
+            this.lblPreisvergleichSellStddevSecond.Text = "...";
+            // 
+            // lblPreisvergleichSellStddevOne
+            // 
+            this.lblPreisvergleichSellStddevOne.AutoSize = true;
+            this.lblPreisvergleichSellStddevOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellStddevOne.Location = new System.Drawing.Point(200, 191);
+            this.lblPreisvergleichSellStddevOne.Name = "lblPreisvergleichSellStddevOne";
+            this.lblPreisvergleichSellStddevOne.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellStddevOne.TabIndex = 43;
+            this.lblPreisvergleichSellStddevOne.Text = "...";
+            // 
+            // lblPreisvergleichBuyStddevSecond
+            // 
+            this.lblPreisvergleichBuyStddevSecond.AutoSize = true;
+            this.lblPreisvergleichBuyStddevSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyStddevSecond.Location = new System.Drawing.Point(396, 191);
+            this.lblPreisvergleichBuyStddevSecond.Name = "lblPreisvergleichBuyStddevSecond";
+            this.lblPreisvergleichBuyStddevSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichBuyStddevSecond.TabIndex = 42;
+            this.lblPreisvergleichBuyStddevSecond.Text = "...";
+            // 
+            // lblPreisvergleichBuyStddevOne
+            // 
+            this.lblPreisvergleichBuyStddevOne.AutoSize = true;
+            this.lblPreisvergleichBuyStddevOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyStddevOne.Location = new System.Drawing.Point(9, 191);
+            this.lblPreisvergleichBuyStddevOne.Name = "lblPreisvergleichBuyStddevOne";
+            this.lblPreisvergleichBuyStddevOne.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichBuyStddevOne.TabIndex = 41;
+            this.lblPreisvergleichBuyStddevOne.Text = "...";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(396, 175);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(60, 16);
+            this.label29.TabIndex = 38;
+            this.label29.Text = "Stddev:";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(9, 175);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(60, 16);
+            this.label30.TabIndex = 37;
+            this.label30.Text = "Stddev:";
+            // 
+            // lblPreisvergleichSellPercentileSecond
+            // 
+            this.lblPreisvergleichSellPercentileSecond.AutoSize = true;
+            this.lblPreisvergleichSellPercentileSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellPercentileSecond.Location = new System.Drawing.Point(588, 274);
+            this.lblPreisvergleichSellPercentileSecond.Name = "lblPreisvergleichSellPercentileSecond";
+            this.lblPreisvergleichSellPercentileSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellPercentileSecond.TabIndex = 60;
+            this.lblPreisvergleichSellPercentileSecond.Text = "...";
+            // 
+            // lblPreisvergleichSellPercentileOne
+            // 
+            this.lblPreisvergleichSellPercentileOne.AutoSize = true;
+            this.lblPreisvergleichSellPercentileOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellPercentileOne.Location = new System.Drawing.Point(201, 274);
+            this.lblPreisvergleichSellPercentileOne.Name = "lblPreisvergleichSellPercentileOne";
+            this.lblPreisvergleichSellPercentileOne.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellPercentileOne.TabIndex = 59;
+            this.lblPreisvergleichSellPercentileOne.Text = "...";
+            // 
+            // lblPreisvergleichBuyPercentileSecond
+            // 
+            this.lblPreisvergleichBuyPercentileSecond.AutoSize = true;
+            this.lblPreisvergleichBuyPercentileSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyPercentileSecond.Location = new System.Drawing.Point(397, 274);
+            this.lblPreisvergleichBuyPercentileSecond.Name = "lblPreisvergleichBuyPercentileSecond";
+            this.lblPreisvergleichBuyPercentileSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichBuyPercentileSecond.TabIndex = 58;
+            this.lblPreisvergleichBuyPercentileSecond.Text = "...";
+            // 
+            // lblPreisvergleichBuyPercentileOne
+            // 
+            this.lblPreisvergleichBuyPercentileOne.AutoSize = true;
+            this.lblPreisvergleichBuyPercentileOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyPercentileOne.Location = new System.Drawing.Point(10, 274);
+            this.lblPreisvergleichBuyPercentileOne.Name = "lblPreisvergleichBuyPercentileOne";
+            this.lblPreisvergleichBuyPercentileOne.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichBuyPercentileOne.TabIndex = 57;
+            this.lblPreisvergleichBuyPercentileOne.Text = "...";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(397, 258);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(81, 16);
+            this.label37.TabIndex = 54;
+            this.label37.Text = "Percentile:";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(10, 258);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(81, 16);
+            this.label38.TabIndex = 53;
+            this.label38.Text = "Percentile:";
+            // 
+            // lblPreisvergleichSellMedianSecond
+            // 
+            this.lblPreisvergleichSellMedianSecond.AutoSize = true;
+            this.lblPreisvergleichSellMedianSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellMedianSecond.Location = new System.Drawing.Point(587, 232);
+            this.lblPreisvergleichSellMedianSecond.Name = "lblPreisvergleichSellMedianSecond";
+            this.lblPreisvergleichSellMedianSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellMedianSecond.TabIndex = 52;
+            this.lblPreisvergleichSellMedianSecond.Text = "...";
+            // 
+            // lblPreisvergleichSellMedianOne
+            // 
+            this.lblPreisvergleichSellMedianOne.AutoSize = true;
+            this.lblPreisvergleichSellMedianOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellMedianOne.Location = new System.Drawing.Point(200, 232);
+            this.lblPreisvergleichSellMedianOne.Name = "lblPreisvergleichSellMedianOne";
+            this.lblPreisvergleichSellMedianOne.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellMedianOne.TabIndex = 51;
+            this.lblPreisvergleichSellMedianOne.Text = "...";
+            // 
+            // lblPreisvergleichBuyMedianSecond
+            // 
+            this.lblPreisvergleichBuyMedianSecond.AutoSize = true;
+            this.lblPreisvergleichBuyMedianSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyMedianSecond.Location = new System.Drawing.Point(396, 232);
+            this.lblPreisvergleichBuyMedianSecond.Name = "lblPreisvergleichBuyMedianSecond";
+            this.lblPreisvergleichBuyMedianSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichBuyMedianSecond.TabIndex = 50;
+            this.lblPreisvergleichBuyMedianSecond.Text = "...";
+            // 
+            // lblPreisvergleichBuyMedianOne
+            // 
+            this.lblPreisvergleichBuyMedianOne.AutoSize = true;
+            this.lblPreisvergleichBuyMedianOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyMedianOne.Location = new System.Drawing.Point(9, 232);
+            this.lblPreisvergleichBuyMedianOne.Name = "lblPreisvergleichBuyMedianOne";
+            this.lblPreisvergleichBuyMedianOne.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichBuyMedianOne.TabIndex = 49;
+            this.lblPreisvergleichBuyMedianOne.Text = "...";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(396, 216);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(62, 16);
+            this.label45.TabIndex = 46;
+            this.label45.Text = "Median:";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(9, 216);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(62, 16);
+            this.label46.TabIndex = 45;
+            this.label46.Text = "Median:";
+            // 
+            // lblPreisvergleichSellMinSecond
+            // 
+            this.lblPreisvergleichSellMinSecond.AutoSize = true;
+            this.lblPreisvergleichSellMinSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellMinSecond.Location = new System.Drawing.Point(587, 358);
+            this.lblPreisvergleichSellMinSecond.Name = "lblPreisvergleichSellMinSecond";
+            this.lblPreisvergleichSellMinSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellMinSecond.TabIndex = 76;
+            this.lblPreisvergleichSellMinSecond.Text = "...";
+            // 
+            // lblPreisvergleichSellMinOne
+            // 
+            this.lblPreisvergleichSellMinOne.AutoSize = true;
+            this.lblPreisvergleichSellMinOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellMinOne.Location = new System.Drawing.Point(200, 358);
+            this.lblPreisvergleichSellMinOne.Name = "lblPreisvergleichSellMinOne";
+            this.lblPreisvergleichSellMinOne.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellMinOne.TabIndex = 75;
+            this.lblPreisvergleichSellMinOne.Text = "...";
+            // 
+            // lblPreisvergleichBuyMinSecond
+            // 
+            this.lblPreisvergleichBuyMinSecond.AutoSize = true;
+            this.lblPreisvergleichBuyMinSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyMinSecond.Location = new System.Drawing.Point(396, 358);
+            this.lblPreisvergleichBuyMinSecond.Name = "lblPreisvergleichBuyMinSecond";
+            this.lblPreisvergleichBuyMinSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichBuyMinSecond.TabIndex = 74;
+            this.lblPreisvergleichBuyMinSecond.Text = "...";
+            // 
+            // lblPreisvergleichBuyMinOne
+            // 
+            this.lblPreisvergleichBuyMinOne.AutoSize = true;
+            this.lblPreisvergleichBuyMinOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyMinOne.Location = new System.Drawing.Point(9, 358);
+            this.lblPreisvergleichBuyMinOne.Name = "lblPreisvergleichBuyMinOne";
+            this.lblPreisvergleichBuyMinOne.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichBuyMinOne.TabIndex = 73;
+            this.lblPreisvergleichBuyMinOne.Text = "...";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(396, 342);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(118, 16);
+            this.label53.TabIndex = 70;
+            this.label53.Text = "Minimaler Preis:";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(9, 342);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(118, 16);
+            this.label54.TabIndex = 69;
+            this.label54.Text = "Minimaler Preis:";
+            // 
+            // lblPreisvergleichSellMaxSecond
+            // 
+            this.lblPreisvergleichSellMaxSecond.AutoSize = true;
+            this.lblPreisvergleichSellMaxSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellMaxSecond.Location = new System.Drawing.Point(586, 316);
+            this.lblPreisvergleichSellMaxSecond.Name = "lblPreisvergleichSellMaxSecond";
+            this.lblPreisvergleichSellMaxSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellMaxSecond.TabIndex = 68;
+            this.lblPreisvergleichSellMaxSecond.Text = "...";
+            // 
+            // lblPreisvergleichSellMaxOne
+            // 
+            this.lblPreisvergleichSellMaxOne.AutoSize = true;
+            this.lblPreisvergleichSellMaxOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichSellMaxOne.Location = new System.Drawing.Point(199, 316);
+            this.lblPreisvergleichSellMaxOne.Name = "lblPreisvergleichSellMaxOne";
+            this.lblPreisvergleichSellMaxOne.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichSellMaxOne.TabIndex = 67;
+            this.lblPreisvergleichSellMaxOne.Text = "...";
+            // 
+            // lblPreisvergleichBuyMaxSecond
+            // 
+            this.lblPreisvergleichBuyMaxSecond.AutoSize = true;
+            this.lblPreisvergleichBuyMaxSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyMaxSecond.Location = new System.Drawing.Point(395, 316);
+            this.lblPreisvergleichBuyMaxSecond.Name = "lblPreisvergleichBuyMaxSecond";
+            this.lblPreisvergleichBuyMaxSecond.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichBuyMaxSecond.TabIndex = 66;
+            this.lblPreisvergleichBuyMaxSecond.Text = "...";
+            // 
+            // lblPreisvergleichBuyMaxOne
+            // 
+            this.lblPreisvergleichBuyMaxOne.AutoSize = true;
+            this.lblPreisvergleichBuyMaxOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisvergleichBuyMaxOne.Location = new System.Drawing.Point(8, 316);
+            this.lblPreisvergleichBuyMaxOne.Name = "lblPreisvergleichBuyMaxOne";
+            this.lblPreisvergleichBuyMaxOne.Size = new System.Drawing.Size(16, 16);
+            this.lblPreisvergleichBuyMaxOne.TabIndex = 65;
+            this.lblPreisvergleichBuyMaxOne.Text = "...";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(395, 300);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(122, 16);
+            this.label61.TabIndex = 62;
+            this.label61.Text = "Maximaler Preis:";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(8, 300);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(122, 16);
+            this.label62.TabIndex = 61;
+            this.label62.Text = "Maximaler Preis:";
             // 
             // Form1
             // 
@@ -1775,8 +2236,46 @@
         private System.Windows.Forms.Label lblPreisvergleichMarktZwei;
         private System.Windows.Forms.Label lblPreisvergleichMarktEins;
         private System.Windows.Forms.ComboBox cbPreisvergleichItem;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblBuySecond;
+        private System.Windows.Forms.Label lblBuyOne;
+        private System.Windows.Forms.Label lblSellSecond;
+        private System.Windows.Forms.Label lblSellOne;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblPreisvergleichSellMinSecond;
+        private System.Windows.Forms.Label lblPreisvergleichSellMinOne;
+        private System.Windows.Forms.Label lblPreisvergleichBuyMinSecond;
+        private System.Windows.Forms.Label lblPreisvergleichBuyMinOne;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label lblPreisvergleichSellMaxSecond;
+        private System.Windows.Forms.Label lblPreisvergleichSellMaxOne;
+        private System.Windows.Forms.Label lblPreisvergleichBuyMaxSecond;
+        private System.Windows.Forms.Label lblPreisvergleichBuyMaxOne;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label lblPreisvergleichSellPercentileSecond;
+        private System.Windows.Forms.Label lblPreisvergleichSellPercentileOne;
+        private System.Windows.Forms.Label lblPreisvergleichBuyPercentileSecond;
+        private System.Windows.Forms.Label lblPreisvergleichBuyPercentileOne;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label lblPreisvergleichSellMedianSecond;
+        private System.Windows.Forms.Label lblPreisvergleichSellMedianOne;
+        private System.Windows.Forms.Label lblPreisvergleichBuyMedianSecond;
+        private System.Windows.Forms.Label lblPreisvergleichBuyMedianOne;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label lblPreisvergleichSellStddevSecond;
+        private System.Windows.Forms.Label lblPreisvergleichSellStddevOne;
+        private System.Windows.Forms.Label lblPreisvergleichBuyStddevSecond;
+        private System.Windows.Forms.Label lblPreisvergleichBuyStddevOne;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label lblPreisvergleichSellAvgSecond;
+        private System.Windows.Forms.Label lblPreisvergleichSellAvgOne;
+        private System.Windows.Forms.Label lblPreisvergleichBuyAvgSecond;
+        private System.Windows.Forms.Label lblPreisvergleichBuyAvgOne;
     }
 }
 

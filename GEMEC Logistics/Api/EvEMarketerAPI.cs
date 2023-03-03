@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml;
 
 namespace GEMEC_Logistics
@@ -74,6 +75,12 @@ namespace GEMEC_Logistics
                 buildedURI += TypeIDs[i].ToString() + ",";
             }
             buildedURI += TypeIDs[TypeIDs.Count - 1].ToString() + $"&usesystem=" + Usesystem.ToString();
+
+            //TODO: Nur zum Testen verwenden um API aufrufen zu können:
+            //if (MessageBox.Show("test", "Visit", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
+            //{
+            //    System.Diagnostics.Process.Start(buildedURI);
+            //}
 
             var response = await client.GetStringAsync(buildedURI);
             

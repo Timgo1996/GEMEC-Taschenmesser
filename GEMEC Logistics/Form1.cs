@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -177,6 +178,7 @@ namespace GEMEC_Logistics
 
         private void button1_Click(object sender, EventArgs e)
         {
+            btnPreisvergleichVergleich.BackColor = Color.Transparent;
             if(cbPreisvergleichItem.Text != "")
             {
                 getDataToCompare();
@@ -225,19 +227,55 @@ namespace GEMEC_Logistics
                 
                 if(marktItemInfos != null)
                 {
-                    foreach(var item in marktItemInfos)
-                    {
-
-                    }
+                    setItemsToLabels(marktItemInfos);
                 } else
                 {
-                    MessageBox.Show("Das angegebene Item konnte nicht gefunden werden!");
+                    MessageBox.Show("Das angegebene Item konnte nicht gefunden werden!", "Item konnte nicht gefunden werden", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             } 
             else
             {
                 MessageBox.Show("Ein Fehler ist aufgetreten. Ihre Daten konnten nicht verglichen werden!", "Daten konnten nicht verglichen werden", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void setItemsToLabels(List<Models.SingleItem.RootEvEItem> marktItemInfos)
+        {
+            //Markt Eins mit Daten befüllen:
+            lblBuyOne.Text = "Kauf (" + marktItemInfos[0].exec_api.marketstat.type.buy.volume.ToString() + ")";
+            lblPreisvergleichBuyAvgOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.avg.ToString();
+            lblPreisvergleichBuyStddevOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.stddev.ToString();
+            lblPreisvergleichBuyMedianOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.median.ToString();
+            lblPreisvergleichBuyPercentileOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.percentile.ToString();
+            lblPreisvergleichBuyMaxOne.Text =  marktItemInfos[0].exec_api.marketstat.type.buy.max.ToString();
+            lblPreisvergleichBuyMinOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.min.ToString();
+
+            lblSellOne.Text = "Verkauf (" + marktItemInfos[0].exec_api.marketstat.type.buy.volume.ToString() + ")";
+            lblPreisvergleichSellAvgOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.avg.ToString();
+            lblPreisvergleichSellStddevOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.stddev.ToString();
+            lblPreisvergleichSellMedianOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.median.ToString();
+            lblPreisvergleichSellPercentileOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.percentile.ToString();
+            lblPreisvergleichSellMaxOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.max.ToString();
+            lblPreisvergleichSellMinOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.min.ToString();
+
+
+
+            //Markt Zwei mit Daten befüllen:
+            lblBuySecond.Text = "Kauf (" + marktItemInfos[1].exec_api.marketstat.type.buy.volume.ToString() + ")";
+            lblPreisvergleichBuyAvgSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.avg.ToString();
+            lblPreisvergleichBuyStddevSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.stddev.ToString();
+            lblPreisvergleichBuyMedianSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.median.ToString();
+            lblPreisvergleichBuyPercentileSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.percentile.ToString();
+            lblPreisvergleichBuyMaxSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.max.ToString();
+            lblPreisvergleichBuyMinSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.min.ToString();
+
+            lblSellSecond.Text = "Verkauf (" + marktItemInfos[1].exec_api.marketstat.type.buy.volume.ToString() + ")";
+            lblPreisvergleichSellAvgSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.avg.ToString();
+            lblPreisvergleichSellStddevSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.stddev.ToString();
+            lblPreisvergleichSellMedianSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.median.ToString();
+            lblPreisvergleichSellPercentileSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.percentile.ToString();
+            lblPreisvergleichSellMaxSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.max.ToString();
+            lblPreisvergleichSellMinSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.min.ToString();
         }
 
         private async Task<List<int>> getStationNameByStationID()
@@ -282,6 +320,14 @@ namespace GEMEC_Logistics
         private void cbPreisvergleichMarktZwei_SelectedIndexChanged(object sender, EventArgs e)
         {
             lblPreisvergleichMarktZwei.Text = cbPreisvergleichMarktZwei.SelectedItem.ToString();
+        }
+
+        private void cbPreisvergleichItem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_Click(this, new EventArgs());
+            }
         }
     }
 
