@@ -74,7 +74,7 @@ namespace GEMEC_Logistics
                     }
                     else if (itemValues[itemValues.Length - 1].Contains("m3") && itemValues[1].EndsWith("Blueprint*"))
                     {
-                        MessageBox.Show("Blueprint " + itemValues[0] + " erkannt. Diese wird nicht mit in die Berechnung für die Versicherungssume berücksichtigt. Der Wert muss ggf. manuell auf auf die Versicherung aufberechnet werden.", "Blueprint erkannt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Die Blueprint " + itemValues[0] + " wurde erkannt. Diese wird nicht mit in die Berechnung für die Versicherungssume berücksichtigt da Sie keinen geschätzen Preis hat. Der Preis für die Versicherung muss ggf. manuell auf auf die Versicherung aufberechnet werden.", "Blueprint ohne Preis erkannt", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
