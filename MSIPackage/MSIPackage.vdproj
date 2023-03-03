@@ -148,6 +148,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -419,20 +427,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:GEMEC Logistics"
-        "ProductCode" = "8:{B04EC19D-BF77-4193-A1DB-9500F0B72F97}"
-        "PackageCode" = "8:{A846DB29-9D6D-44CA-9465-8E0A39BBA83C}"
+        "ProductName" = "8:GEMEC Taschenmesser"
+        "ProductCode" = "8:{6FE17521-821E-4F73-84D7-6D494391F314}"
+        "PackageCode" = "8:{87E0200A-56AE-472C-A4D1-3778CD19D05F}"
         "UpgradeCode" = "8:{31A0F44D-F275-40E5-8671-D69552A88E3B}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.3"
+        "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:GEMEC"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Install GEMEC Logistics"
+        "Title" = "8:Install GEMEC Taschenmesser"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Timgo"
         "Keywords" = "8:"
