@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -245,12 +246,12 @@ namespace GEMEC_Logistics
             {
                 //Markt Eins mit Daten befüllen:
                 lblBuyOne.Text = "Kauf (" + marktItemInfos[0].exec_api.marketstat.type.buy.volume.ToString() + ")";
-                lblPreisvergleichBuyAvgOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.avg.ToString().Replace(".",",");
-                lblPreisvergleichBuyStddevOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.stddev.ToString().Replace(".", ",");
-                lblPreisvergleichBuyMedianOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.median.ToString().Replace(".", ",");
-                lblPreisvergleichBuyPercentileOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.percentile.ToString().Replace(".", ",");
-                lblPreisvergleichBuyMaxOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.max.ToString().Replace(".", ",");
-                lblPreisvergleichBuyMinOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.min.ToString().Replace(".", ",");
+                lblPreisvergleichBuyAvgOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.avg.ToString();
+                lblPreisvergleichBuyStddevOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.stddev.ToString();
+                lblPreisvergleichBuyMedianOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.median.ToString();
+                lblPreisvergleichBuyPercentileOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.percentile.ToString();
+                lblPreisvergleichBuyMaxOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.max.ToString();
+                lblPreisvergleichBuyMinOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.min.ToString();
 
                 lblSellOne.Text = "Verkauf (" + marktItemInfos[0].exec_api.marketstat.type.buy.volume.ToString() + ")";
                 lblPreisvergleichSellAvgOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.avg.ToString().Replace(".", ",");
