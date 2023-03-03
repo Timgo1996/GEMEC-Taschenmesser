@@ -98,12 +98,14 @@
             this.lblPreisvergleichBuyMaxOne = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
+            this.pbLogistikRechnerListeLeeren = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerBelohnung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerVersicherung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerGesamtkubik)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogistikRechnerListeLeeren)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -316,6 +318,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.DimGray;
+            this.tabPage1.Controls.Add(this.pbLogistikRechnerListeLeeren);
             this.tabPage1.Controls.Add(this.txtLogistikRechnerTransportItems);
             this.tabPage1.Controls.Add(this.btnLogistikRechnerCalculate);
             this.tabPage1.Controls.Add(this.picbLogistikRechnerGesamtkubik);
@@ -2244,6 +2247,19 @@
             this.label62.TabIndex = 61;
             this.label62.Text = "Maximaler Preis in ISK:";
             // 
+            // pbLogistikRechnerListeLeeren
+            // 
+            this.pbLogistikRechnerListeLeeren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbLogistikRechnerListeLeeren.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbLogistikRechnerListeLeeren.Image = ((System.Drawing.Image)(resources.GetObject("pbLogistikRechnerListeLeeren.Image")));
+            this.pbLogistikRechnerListeLeeren.Location = new System.Drawing.Point(725, 203);
+            this.pbLogistikRechnerListeLeeren.Name = "pbLogistikRechnerListeLeeren";
+            this.pbLogistikRechnerListeLeeren.Size = new System.Drawing.Size(100, 38);
+            this.pbLogistikRechnerListeLeeren.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogistikRechnerListeLeeren.TabIndex = 15;
+            this.pbLogistikRechnerListeLeeren.TabStop = false;
+            this.pbLogistikRechnerListeLeeren.Click += new System.EventHandler(this.pbLogistikRechnerListeLeeren_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2264,6 +2280,7 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogistikRechnerListeLeeren)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2339,6 +2356,7 @@
         private System.Windows.Forms.Label lblPreisvergleichSellAvgOne;
         private System.Windows.Forms.Label lblPreisvergleichBuyAvgSecond;
         private System.Windows.Forms.Label lblPreisvergleichBuyAvgOne;
+        private System.Windows.Forms.PictureBox pbLogistikRechnerListeLeeren;
     }
 }
 

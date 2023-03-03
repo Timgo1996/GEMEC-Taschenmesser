@@ -371,6 +371,11 @@ namespace GEMEC_Logistics
                 button1_Click(this, new EventArgs());
             }
         }
+
+        private void pbLogistikRechnerListeLeeren_Click(object sender, EventArgs e)
+        {
+            txtLogistikRechnerTransportItems.Text = "";
+        }
     }
 
     public class EvEItemValues
