@@ -2107,9 +2107,9 @@
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.Location = new System.Drawing.Point(396, 342);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(118, 16);
+            this.label53.Size = new System.Drawing.Size(161, 16);
             this.label53.TabIndex = 70;
-            this.label53.Text = "Minimaler Preis:";
+            this.label53.Text = "Minimaler Preis in ISK:";
             // 
             // label54
             // 
@@ -2117,9 +2117,9 @@
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.Location = new System.Drawing.Point(9, 342);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(118, 16);
+            this.label54.Size = new System.Drawing.Size(161, 16);
             this.label54.TabIndex = 69;
-            this.label54.Text = "Minimaler Preis:";
+            this.label54.Text = "Minimaler Preis in ISK:";
             // 
             // lblPreisvergleichSellMaxSecond
             // 
@@ -2167,9 +2167,9 @@
             this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label61.Location = new System.Drawing.Point(395, 300);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(122, 16);
+            this.label61.Size = new System.Drawing.Size(165, 16);
             this.label61.TabIndex = 62;
-            this.label61.Text = "Maximaler Preis:";
+            this.label61.Text = "Maximaler Preis in ISK:";
             // 
             // label62
             // 
@@ -2177,9 +2177,9 @@
             this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label62.Location = new System.Drawing.Point(8, 300);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(122, 16);
+            this.label62.Size = new System.Drawing.Size(165, 16);
             this.label62.TabIndex = 61;
-            this.label62.Text = "Maximaler Preis:";
+            this.label62.Text = "Maximaler Preis in ISK:";
             // 
             // Form1
             // 
