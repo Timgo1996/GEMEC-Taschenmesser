@@ -177,7 +177,14 @@ namespace GEMEC_Logistics
 
         private void button1_Click(object sender, EventArgs e)
         {
-            getDataToCompare();
+            if(cbPreisvergleichItem.Text != "")
+            {
+                getDataToCompare();
+            }
+            else
+            {
+                MessageBox.Show("Bitte geben sie ein Item an.");
+            }
         }
 
         private async Task<List<Models.SingleItem.RootEvEItem>> getItemPriceToCompareData(List<int> stationIDs)
@@ -214,7 +221,18 @@ namespace GEMEC_Logistics
 
             if(stationIDs.Count != 0 && stationIDs != null)
             {
-                List<Models.SingleItem.RootEvEItem> marktEinsItemInfos = await getItemPriceToCompareData(stationIDs);
+                List<Models.SingleItem.RootEvEItem> marktItemInfos = await getItemPriceToCompareData(stationIDs);
+                
+                if(marktItemInfos != null)
+                {
+                    foreach(var item in marktItemInfos)
+                    {
+
+                    }
+                } else
+                {
+                    MessageBox.Show("Das angegebene Item konnte nicht gefunden werden!");
+                }
             } 
             else
             {
@@ -246,7 +264,7 @@ namespace GEMEC_Logistics
         {
             List<int> itemIDs = new List<int>();
 
-            var result = eveItemValueIDs.Where(itm => itm.itemName == txtPreisvergleichItem.Text);
+            var result = eveItemValueIDs.Where(itm => itm.itemName == cbPreisvergleichItem.Text);
             
             foreach ( var item in result )
             {
@@ -254,6 +272,16 @@ namespace GEMEC_Logistics
             }
 
             return itemIDs;
+        }
+
+        private void cbPreisvergleichMarktEins_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblPreisvergleichMarktEins.Text = cbPreisvergleichMarktEins.SelectedItem.ToString();
+        }
+
+        private void cbPreisvergleichMarktZwei_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblPreisvergleichMarktZwei.Text = cbPreisvergleichMarktZwei.SelectedItem.ToString();
         }
     }
 
