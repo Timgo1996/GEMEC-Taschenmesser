@@ -126,7 +126,7 @@
             this.btnLogistikRechnerCalculate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnLogistikRechnerCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogistikRechnerCalculate.Location = new System.Drawing.Point(660, 453);
-            this.btnLogistikRechnerCalculate.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.btnLogistikRechnerCalculate.Margin = new System.Windows.Forms.Padding(7);
             this.btnLogistikRechnerCalculate.Name = "btnLogistikRechnerCalculate";
             this.btnLogistikRechnerCalculate.Size = new System.Drawing.Size(527, 85);
             this.btnLogistikRechnerCalculate.TabIndex = 1;
@@ -139,7 +139,7 @@
             this.txtLogistikRechnerTransportItems.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLogistikRechnerTransportItems.Location = new System.Drawing.Point(9, 9);
-            this.txtLogistikRechnerTransportItems.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtLogistikRechnerTransportItems.Margin = new System.Windows.Forms.Padding(7);
             this.txtLogistikRechnerTransportItems.Multiline = true;
             this.txtLogistikRechnerTransportItems.Name = "txtLogistikRechnerTransportItems";
             this.txtLogistikRechnerTransportItems.Size = new System.Drawing.Size(1826, 426);
@@ -188,7 +188,7 @@
             this.txtLogistikRechnerBelohnung.Enabled = false;
             this.txtLogistikRechnerBelohnung.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogistikRechnerBelohnung.Location = new System.Drawing.Point(462, 607);
-            this.txtLogistikRechnerBelohnung.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtLogistikRechnerBelohnung.Margin = new System.Windows.Forms.Padding(7);
             this.txtLogistikRechnerBelohnung.Name = "txtLogistikRechnerBelohnung";
             this.txtLogistikRechnerBelohnung.Size = new System.Drawing.Size(720, 56);
             this.txtLogistikRechnerBelohnung.TabIndex = 6;
@@ -201,7 +201,7 @@
             this.txtLogistikRechnerVersicherung.Enabled = false;
             this.txtLogistikRechnerVersicherung.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogistikRechnerVersicherung.Location = new System.Drawing.Point(462, 685);
-            this.txtLogistikRechnerVersicherung.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtLogistikRechnerVersicherung.Margin = new System.Windows.Forms.Padding(7);
             this.txtLogistikRechnerVersicherung.Name = "txtLogistikRechnerVersicherung";
             this.txtLogistikRechnerVersicherung.Size = new System.Drawing.Size(720, 56);
             this.txtLogistikRechnerVersicherung.TabIndex = 7;
@@ -214,7 +214,7 @@
             this.txtLogistikRechnerGesamtkubikmeter.Enabled = false;
             this.txtLogistikRechnerGesamtkubikmeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogistikRechnerGesamtkubikmeter.Location = new System.Drawing.Point(462, 763);
-            this.txtLogistikRechnerGesamtkubikmeter.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtLogistikRechnerGesamtkubikmeter.Margin = new System.Windows.Forms.Padding(7);
             this.txtLogistikRechnerGesamtkubikmeter.Name = "txtLogistikRechnerGesamtkubikmeter";
             this.txtLogistikRechnerGesamtkubikmeter.Size = new System.Drawing.Size(333, 56);
             this.txtLogistikRechnerGesamtkubikmeter.TabIndex = 8;
@@ -262,7 +262,7 @@
             this.picbLogistikRechnerBelohnung.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picbLogistikRechnerBelohnung.Image = ((System.Drawing.Image)(resources.GetObject("picbLogistikRechnerBelohnung.Image")));
             this.picbLogistikRechnerBelohnung.Location = new System.Drawing.Point(378, 600);
-            this.picbLogistikRechnerBelohnung.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.picbLogistikRechnerBelohnung.Margin = new System.Windows.Forms.Padding(7);
             this.picbLogistikRechnerBelohnung.Name = "picbLogistikRechnerBelohnung";
             this.picbLogistikRechnerBelohnung.Size = new System.Drawing.Size(70, 67);
             this.picbLogistikRechnerBelohnung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -278,7 +278,7 @@
             this.picbLogistikRechnerVersicherung.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picbLogistikRechnerVersicherung.Image = ((System.Drawing.Image)(resources.GetObject("picbLogistikRechnerVersicherung.Image")));
             this.picbLogistikRechnerVersicherung.Location = new System.Drawing.Point(378, 678);
-            this.picbLogistikRechnerVersicherung.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.picbLogistikRechnerVersicherung.Margin = new System.Windows.Forms.Padding(7);
             this.picbLogistikRechnerVersicherung.Name = "picbLogistikRechnerVersicherung";
             this.picbLogistikRechnerVersicherung.Size = new System.Drawing.Size(70, 67);
             this.picbLogistikRechnerVersicherung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -294,7 +294,7 @@
             this.picbLogistikRechnerGesamtkubik.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picbLogistikRechnerGesamtkubik.Image = ((System.Drawing.Image)(resources.GetObject("picbLogistikRechnerGesamtkubik.Image")));
             this.picbLogistikRechnerGesamtkubik.Location = new System.Drawing.Point(378, 756);
-            this.picbLogistikRechnerGesamtkubik.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.picbLogistikRechnerGesamtkubik.Margin = new System.Windows.Forms.Padding(7);
             this.picbLogistikRechnerGesamtkubik.Name = "picbLogistikRechnerGesamtkubik";
             this.picbLogistikRechnerGesamtkubik.Size = new System.Drawing.Size(70, 67);
             this.picbLogistikRechnerGesamtkubik.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -308,7 +308,7 @@
             // 
             this.btnPreisvergleichVergleich.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPreisvergleichVergleich.Location = new System.Drawing.Point(931, 58);
-            this.btnPreisvergleichVergleich.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPreisvergleichVergleich.Margin = new System.Windows.Forms.Padding(2);
             this.btnPreisvergleichVergleich.Name = "btnPreisvergleichVergleich";
             this.btnPreisvergleichVergleich.Size = new System.Drawing.Size(278, 58);
             this.btnPreisvergleichVergleich.TabIndex = 15;
@@ -324,7 +324,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1867, 892);
@@ -349,9 +349,9 @@
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.txtLogistikRechnerGesamtkubikmeter);
             this.tabPage1.Location = new System.Drawing.Point(10, 47);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(1847, 835);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "LogistikRechner";
@@ -362,7 +362,7 @@
             this.pbLogistikRechnerListeLeeren.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbLogistikRechnerListeLeeren.Image = ((System.Drawing.Image)(resources.GetObject("pbLogistikRechnerListeLeeren.Image")));
             this.pbLogistikRechnerListeLeeren.Location = new System.Drawing.Point(1692, 453);
-            this.pbLogistikRechnerListeLeeren.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.pbLogistikRechnerListeLeeren.Margin = new System.Windows.Forms.Padding(7);
             this.pbLogistikRechnerListeLeeren.Name = "pbLogistikRechnerListeLeeren";
             this.pbLogistikRechnerListeLeeren.Size = new System.Drawing.Size(233, 85);
             this.pbLogistikRechnerListeLeeren.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -423,9 +423,9 @@
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.btnPreisvergleichVergleich);
             this.tabPage2.Location = new System.Drawing.Point(10, 47);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(1847, 835);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Preisvergleich";
@@ -2231,7 +2231,7 @@
             "Gravimetric ECM II",
             "The Solitaire"});
             this.cbPreisvergleichItem.Location = new System.Drawing.Point(187, 18);
-            this.cbPreisvergleichItem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbPreisvergleichItem.Margin = new System.Windows.Forms.Padding(2);
             this.cbPreisvergleichItem.Name = "cbPreisvergleichItem";
             this.cbPreisvergleichItem.Size = new System.Drawing.Size(730, 37);
             this.cbPreisvergleichItem.TabIndex = 24;
@@ -2269,7 +2269,7 @@
             this.cbPreisvergleichMarktZwei.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPreisvergleichMarktZwei.FormattingEnabled = true;
             this.cbPreisvergleichMarktZwei.Location = new System.Drawing.Point(187, 118);
-            this.cbPreisvergleichMarktZwei.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.cbPreisvergleichMarktZwei.Margin = new System.Windows.Forms.Padding(7);
             this.cbPreisvergleichMarktZwei.Name = "cbPreisvergleichMarktZwei";
             this.cbPreisvergleichMarktZwei.Size = new System.Drawing.Size(730, 37);
             this.cbPreisvergleichMarktZwei.TabIndex = 21;
@@ -2282,7 +2282,7 @@
             this.cbPreisvergleichMarktEins.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPreisvergleichMarktEins.FormattingEnabled = true;
             this.cbPreisvergleichMarktEins.Location = new System.Drawing.Point(187, 67);
-            this.cbPreisvergleichMarktEins.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.cbPreisvergleichMarktEins.Margin = new System.Windows.Forms.Padding(7);
             this.cbPreisvergleichMarktEins.Name = "cbPreisvergleichMarktEins";
             this.cbPreisvergleichMarktEins.Size = new System.Drawing.Size(730, 37);
             this.cbPreisvergleichMarktEins.TabIndex = 20;
@@ -2327,10 +2327,10 @@
             this.ClientSize = new System.Drawing.Size(1867, 892);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.MinimumSize = new System.Drawing.Size(1867, 882);
             this.Name = "Form1";
-            this.Text = "[GEMEC] Taschenmesser V1.0.3";
+            this.Text = "[GEMEC] Taschenmesser ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerBelohnung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerVersicherung)).EndInit();
