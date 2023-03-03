@@ -64,12 +64,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_19D335E763D0C00F34F85C30EA79EF7D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_22059A2164DE40EC8A1D9B5416D4BBC1"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -91,6 +85,12 @@
         "OwnerKey" = "8:_958169E91E5C982D9410625FCCCA07F0"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_19D335E763D0C00F34F85C30EA79EF7D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -109,6 +109,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -125,6 +141,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -396,15 +420,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GEMEC Logistics"
-        "ProductCode" = "8:{A66A87FF-3565-45D3-83A0-720E01B9ADD4}"
-        "PackageCode" = "8:{2E80D818-6D77-40E2-B20B-438F62446256}"
+        "ProductCode" = "8:{B04EC19D-BF77-4193-A1DB-9500F0B72F97}"
+        "PackageCode" = "8:{A846DB29-9D6D-44CA-9465-8E0A39BBA83C}"
         "UpgradeCode" = "8:{31A0F44D-F275-40E5-8671-D69552A88E3B}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.1"
+        "ProductVersion" = "8:1.0.3"
         "Manufacturer" = "8:GEMEC"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
