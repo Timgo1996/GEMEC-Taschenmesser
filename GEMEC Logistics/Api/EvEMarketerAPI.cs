@@ -77,18 +77,26 @@ namespace GEMEC_Logistics
             buildedURI += TypeIDs[TypeIDs.Count - 1].ToString() + $"&usesystem=" + Usesystem.ToString();
 
             //TODO: Nur zum Testen verwenden um API aufrufen zu können:
-            //if (MessageBox.Show("test", "Visit", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
-            //{
-            //    System.Diagnostics.Process.Start(buildedURI);
-            //}
+            if (MessageBox.Show("test", "Visit", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.Start(buildedURI);
+            }
 
             var response = await client.GetStringAsync(buildedURI);
             
             XmlDocument doc = new XmlDocument();
             doc.LoadXml(response);
             string jsonString = JsonConvert.SerializeXmlNode(doc);
-
-            return JsonConvert.DeserializeObject<GEMEC_Logistics.Models.SingleItem.RootEvEItem>(jsonString);
+            try
+            {
+                return JsonConvert.DeserializeObject<GEMEC_Logistics.Models.SingleItem.RootEvEItem>(jsonString);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Das angegebene Item ist ein System und kann nicht ausgewertet werden.", "Item kann nicht ausgelesen werden", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+            
         }
 
     }
