@@ -126,7 +126,7 @@
             this.btnLogistikRechnerCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogistikRechnerCalculate.Location = new System.Drawing.Point(283, 203);
             this.btnLogistikRechnerCalculate.Name = "btnLogistikRechnerCalculate";
-            this.btnLogistikRechnerCalculate.Size = new System.Drawing.Size(327, 38);
+            this.btnLogistikRechnerCalculate.Size = new System.Drawing.Size(321, 38);
             this.btnLogistikRechnerCalculate.TabIndex = 1;
             this.btnLogistikRechnerCalculate.Text = "Berechne Transport";
             this.btnLogistikRechnerCalculate.UseVisualStyleBackColor = true;
@@ -147,7 +147,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 329);
+            this.label2.Location = new System.Drawing.Point(4, 285);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 24);
             this.label2.TabIndex = 3;
@@ -158,7 +158,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 364);
+            this.label3.Location = new System.Drawing.Point(4, 320);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 24);
             this.label3.TabIndex = 4;
@@ -169,7 +169,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 399);
+            this.label4.Location = new System.Drawing.Point(4, 355);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 24);
             this.label4.TabIndex = 5;
@@ -181,7 +181,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLogistikRechnerBelohnung.Enabled = false;
             this.txtLogistikRechnerBelohnung.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogistikRechnerBelohnung.Location = new System.Drawing.Point(198, 326);
+            this.txtLogistikRechnerBelohnung.Location = new System.Drawing.Point(194, 282);
             this.txtLogistikRechnerBelohnung.Name = "txtLogistikRechnerBelohnung";
             this.txtLogistikRechnerBelohnung.Size = new System.Drawing.Size(412, 29);
             this.txtLogistikRechnerBelohnung.TabIndex = 6;
@@ -193,7 +193,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLogistikRechnerVersicherung.Enabled = false;
             this.txtLogistikRechnerVersicherung.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogistikRechnerVersicherung.Location = new System.Drawing.Point(198, 361);
+            this.txtLogistikRechnerVersicherung.Location = new System.Drawing.Point(194, 317);
             this.txtLogistikRechnerVersicherung.Name = "txtLogistikRechnerVersicherung";
             this.txtLogistikRechnerVersicherung.Size = new System.Drawing.Size(412, 29);
             this.txtLogistikRechnerVersicherung.TabIndex = 7;
@@ -205,7 +205,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLogistikRechnerGesamtkubikmeter.Enabled = false;
             this.txtLogistikRechnerGesamtkubikmeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogistikRechnerGesamtkubikmeter.Location = new System.Drawing.Point(198, 396);
+            this.txtLogistikRechnerGesamtkubikmeter.Location = new System.Drawing.Point(194, 352);
             this.txtLogistikRechnerGesamtkubikmeter.Name = "txtLogistikRechnerGesamtkubikmeter";
             this.txtLogistikRechnerGesamtkubikmeter.Size = new System.Drawing.Size(247, 29);
             this.txtLogistikRechnerGesamtkubikmeter.TabIndex = 8;
@@ -216,7 +216,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(617, 329);
+            this.label5.Location = new System.Drawing.Point(613, 285);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 24);
             this.label5.TabIndex = 9;
@@ -227,7 +227,7 @@
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(617, 364);
+            this.label6.Location = new System.Drawing.Point(613, 320);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 24);
             this.label6.TabIndex = 10;
@@ -238,7 +238,7 @@
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(450, 399);
+            this.label7.Location = new System.Drawing.Point(446, 355);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(31, 24);
             this.label7.TabIndex = 11;
@@ -249,7 +249,7 @@
             this.picbLogistikRechnerBelohnung.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.picbLogistikRechnerBelohnung.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picbLogistikRechnerBelohnung.Image = ((System.Drawing.Image)(resources.GetObject("picbLogistikRechnerBelohnung.Image")));
-            this.picbLogistikRechnerBelohnung.Location = new System.Drawing.Point(162, 323);
+            this.picbLogistikRechnerBelohnung.Location = new System.Drawing.Point(158, 280);
             this.picbLogistikRechnerBelohnung.Name = "picbLogistikRechnerBelohnung";
             this.picbLogistikRechnerBelohnung.Size = new System.Drawing.Size(30, 30);
             this.picbLogistikRechnerBelohnung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -264,7 +264,7 @@
             this.picbLogistikRechnerVersicherung.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.picbLogistikRechnerVersicherung.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picbLogistikRechnerVersicherung.Image = ((System.Drawing.Image)(resources.GetObject("picbLogistikRechnerVersicherung.Image")));
-            this.picbLogistikRechnerVersicherung.Location = new System.Drawing.Point(162, 358);
+            this.picbLogistikRechnerVersicherung.Location = new System.Drawing.Point(158, 315);
             this.picbLogistikRechnerVersicherung.Name = "picbLogistikRechnerVersicherung";
             this.picbLogistikRechnerVersicherung.Size = new System.Drawing.Size(30, 30);
             this.picbLogistikRechnerVersicherung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -279,7 +279,7 @@
             this.picbLogistikRechnerGesamtkubik.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.picbLogistikRechnerGesamtkubik.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picbLogistikRechnerGesamtkubik.Image = ((System.Drawing.Image)(resources.GetObject("picbLogistikRechnerGesamtkubik.Image")));
-            this.picbLogistikRechnerGesamtkubik.Location = new System.Drawing.Point(162, 393);
+            this.picbLogistikRechnerGesamtkubik.Location = new System.Drawing.Point(158, 350);
             this.picbLogistikRechnerGesamtkubik.Name = "picbLogistikRechnerGesamtkubik";
             this.picbLogistikRechnerGesamtkubik.Size = new System.Drawing.Size(30, 30);
             this.picbLogistikRechnerGesamtkubik.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -312,7 +312,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(902, 403);
+            this.tabControl1.Size = new System.Drawing.Size(902, 405);
             this.tabControl1.TabIndex = 16;
             // 
             // tabPage1
@@ -337,7 +337,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.tabPage1.Size = new System.Drawing.Size(894, 428);
+            this.tabPage1.Size = new System.Drawing.Size(894, 379);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "LogistikRechner";
             // 
@@ -410,7 +410,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.tabPage2.Size = new System.Drawing.Size(894, 377);
+            this.tabPage2.Size = new System.Drawing.Size(894, 379);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Preisvergleich";
             // 
