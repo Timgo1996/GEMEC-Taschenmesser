@@ -124,11 +124,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogistikRechnerCalculate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnLogistikRechnerCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogistikRechnerCalculate.Location = new System.Drawing.Point(283, 203);
+            this.btnLogistikRechnerCalculate.Location = new System.Drawing.Point(248, 203);
             this.btnLogistikRechnerCalculate.Name = "btnLogistikRechnerCalculate";
-            this.btnLogistikRechnerCalculate.Size = new System.Drawing.Size(259, 38);
+            this.btnLogistikRechnerCalculate.Size = new System.Drawing.Size(341, 38);
             this.btnLogistikRechnerCalculate.TabIndex = 1;
-            this.btnLogistikRechnerCalculate.Text = "Berechne Transport";
+            this.btnLogistikRechnerCalculate.Text = "Berechne Transport (300 ISK / m³)";
             this.btnLogistikRechnerCalculate.UseVisualStyleBackColor = true;
             this.btnLogistikRechnerCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
@@ -293,7 +293,7 @@
             // 
             this.btnPreisvergleichVergleich.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPreisvergleichVergleich.Location = new System.Drawing.Point(340, 26);
-            this.btnPreisvergleichVergleich.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnPreisvergleichVergleich.Margin = new System.Windows.Forms.Padding(1);
             this.btnPreisvergleichVergleich.Name = "btnPreisvergleichVergleich";
             this.btnPreisvergleichVergleich.Size = new System.Drawing.Size(119, 26);
             this.btnPreisvergleichVergleich.TabIndex = 15;
@@ -309,7 +309,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(-2, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(1);
             this.tabControl1.MinimumSize = new System.Drawing.Size(840, 412);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -335,9 +335,9 @@
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.txtLogistikRechnerGesamtkubikmeter);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(1);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(1);
             this.tabPage1.Size = new System.Drawing.Size(832, 386);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "LogistikRechner";
@@ -408,9 +408,9 @@
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.btnPreisvergleichVergleich);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(1);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(1);
             this.tabPage2.Size = new System.Drawing.Size(832, 386);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Preisvergleich";
@@ -2176,7 +2176,7 @@
             "Gravimetric ECM II",
             "The Solitaire"});
             this.cbPreisvergleichItem.Location = new System.Drawing.Point(80, 8);
-            this.cbPreisvergleichItem.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.cbPreisvergleichItem.Margin = new System.Windows.Forms.Padding(1);
             this.cbPreisvergleichItem.Name = "cbPreisvergleichItem";
             this.cbPreisvergleichItem.Size = new System.Drawing.Size(256, 21);
             this.cbPreisvergleichItem.TabIndex = 24;
