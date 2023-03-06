@@ -90,7 +90,7 @@ namespace GEMEC_Logistics
                     setValuesToZero();
                     return true;
                 }
-                gesamtBelohnung = gesamtKubikmeter * 400;
+                gesamtBelohnung = gesamtKubikmeter * 300;
             }
             catch (Exception)
             {
