@@ -126,7 +126,7 @@
             this.btnLogistikRechnerCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogistikRechnerCalculate.Location = new System.Drawing.Point(283, 203);
             this.btnLogistikRechnerCalculate.Name = "btnLogistikRechnerCalculate";
-            this.btnLogistikRechnerCalculate.Size = new System.Drawing.Size(321, 38);
+            this.btnLogistikRechnerCalculate.Size = new System.Drawing.Size(259, 38);
             this.btnLogistikRechnerCalculate.TabIndex = 1;
             this.btnLogistikRechnerCalculate.Text = "Berechne Transport";
             this.btnLogistikRechnerCalculate.UseVisualStyleBackColor = true;
@@ -139,7 +139,7 @@
             this.txtLogistikRechnerTransportItems.Location = new System.Drawing.Point(4, 4);
             this.txtLogistikRechnerTransportItems.Multiline = true;
             this.txtLogistikRechnerTransportItems.Name = "txtLogistikRechnerTransportItems";
-            this.txtLogistikRechnerTransportItems.Size = new System.Drawing.Size(886, 193);
+            this.txtLogistikRechnerTransportItems.Size = new System.Drawing.Size(824, 193);
             this.txtLogistikRechnerTransportItems.TabIndex = 2;
             // 
             // label2
@@ -183,7 +183,7 @@
             this.txtLogistikRechnerBelohnung.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogistikRechnerBelohnung.Location = new System.Drawing.Point(194, 289);
             this.txtLogistikRechnerBelohnung.Name = "txtLogistikRechnerBelohnung";
-            this.txtLogistikRechnerBelohnung.Size = new System.Drawing.Size(412, 29);
+            this.txtLogistikRechnerBelohnung.Size = new System.Drawing.Size(350, 29);
             this.txtLogistikRechnerBelohnung.TabIndex = 6;
             this.txtLogistikRechnerBelohnung.Text = "0";
             // 
@@ -195,7 +195,7 @@
             this.txtLogistikRechnerVersicherung.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogistikRechnerVersicherung.Location = new System.Drawing.Point(194, 324);
             this.txtLogistikRechnerVersicherung.Name = "txtLogistikRechnerVersicherung";
-            this.txtLogistikRechnerVersicherung.Size = new System.Drawing.Size(412, 29);
+            this.txtLogistikRechnerVersicherung.Size = new System.Drawing.Size(350, 29);
             this.txtLogistikRechnerVersicherung.TabIndex = 7;
             this.txtLogistikRechnerVersicherung.Text = "0";
             // 
@@ -207,7 +207,7 @@
             this.txtLogistikRechnerGesamtkubikmeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogistikRechnerGesamtkubikmeter.Location = new System.Drawing.Point(194, 359);
             this.txtLogistikRechnerGesamtkubikmeter.Name = "txtLogistikRechnerGesamtkubikmeter";
-            this.txtLogistikRechnerGesamtkubikmeter.Size = new System.Drawing.Size(247, 29);
+            this.txtLogistikRechnerGesamtkubikmeter.Size = new System.Drawing.Size(185, 29);
             this.txtLogistikRechnerGesamtkubikmeter.TabIndex = 8;
             this.txtLogistikRechnerGesamtkubikmeter.Text = "0";
             // 
@@ -216,7 +216,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(613, 292);
+            this.label5.Location = new System.Drawing.Point(551, 292);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 24);
             this.label5.TabIndex = 9;
@@ -227,7 +227,7 @@
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(613, 327);
+            this.label6.Location = new System.Drawing.Point(551, 327);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 24);
             this.label6.TabIndex = 10;
@@ -238,7 +238,7 @@
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(446, 362);
+            this.label7.Location = new System.Drawing.Point(384, 362);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(31, 24);
             this.label7.TabIndex = 11;
@@ -292,7 +292,7 @@
             // btnPreisvergleichVergleich
             // 
             this.btnPreisvergleichVergleich.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPreisvergleichVergleich.Location = new System.Drawing.Point(402, 26);
+            this.btnPreisvergleichVergleich.Location = new System.Drawing.Point(340, 26);
             this.btnPreisvergleichVergleich.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnPreisvergleichVergleich.Name = "btnPreisvergleichVergleich";
             this.btnPreisvergleichVergleich.Size = new System.Drawing.Size(119, 26);
@@ -308,12 +308,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Location = new System.Drawing.Point(-2, 0);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.tabControl1.MinimumSize = new System.Drawing.Size(902, 405);
+            this.tabControl1.MinimumSize = new System.Drawing.Size(840, 412);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(902, 412);
+            this.tabControl1.Size = new System.Drawing.Size(840, 412);
             this.tabControl1.TabIndex = 16;
             // 
             // tabPage1
@@ -338,7 +338,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.tabPage1.Size = new System.Drawing.Size(894, 386);
+            this.tabPage1.Size = new System.Drawing.Size(832, 386);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "LogistikRechner";
             // 
@@ -347,7 +347,7 @@
             this.pbLogistikRechnerListeLeeren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbLogistikRechnerListeLeeren.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbLogistikRechnerListeLeeren.Image = ((System.Drawing.Image)(resources.GetObject("pbLogistikRechnerListeLeeren.Image")));
-            this.pbLogistikRechnerListeLeeren.Location = new System.Drawing.Point(827, 203);
+            this.pbLogistikRechnerListeLeeren.Location = new System.Drawing.Point(761, 203);
             this.pbLogistikRechnerListeLeeren.Name = "pbLogistikRechnerListeLeeren";
             this.pbLogistikRechnerListeLeeren.Size = new System.Drawing.Size(100, 38);
             this.pbLogistikRechnerListeLeeren.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -411,7 +411,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.tabPage2.Size = new System.Drawing.Size(894, 386);
+            this.tabPage2.Size = new System.Drawing.Size(832, 386);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Preisvergleich";
             // 
@@ -421,7 +421,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPreisvergleichSellMinSecond.AutoSize = true;
             this.lblPreisvergleichSellMinSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellMinSecond.Location = new System.Drawing.Point(589, 358);
+            this.lblPreisvergleichSellMinSecond.Location = new System.Drawing.Point(527, 358);
             this.lblPreisvergleichSellMinSecond.Name = "lblPreisvergleichSellMinSecond";
             this.lblPreisvergleichSellMinSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellMinSecond.TabIndex = 76;
@@ -432,7 +432,7 @@
             this.lblPreisvergleichSellMinOne.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichSellMinOne.AutoSize = true;
             this.lblPreisvergleichSellMinOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellMinOne.Location = new System.Drawing.Point(202, 358);
+            this.lblPreisvergleichSellMinOne.Location = new System.Drawing.Point(171, 358);
             this.lblPreisvergleichSellMinOne.Name = "lblPreisvergleichSellMinOne";
             this.lblPreisvergleichSellMinOne.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellMinOne.TabIndex = 75;
@@ -443,7 +443,7 @@
             this.lblPreisvergleichBuyMinSecond.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichBuyMinSecond.AutoSize = true;
             this.lblPreisvergleichBuyMinSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichBuyMinSecond.Location = new System.Drawing.Point(398, 357);
+            this.lblPreisvergleichBuyMinSecond.Location = new System.Drawing.Point(367, 357);
             this.lblPreisvergleichBuyMinSecond.Name = "lblPreisvergleichBuyMinSecond";
             this.lblPreisvergleichBuyMinSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichBuyMinSecond.TabIndex = 74;
@@ -466,7 +466,7 @@
             this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(398, 342);
+            this.label53.Location = new System.Drawing.Point(367, 342);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(161, 16);
             this.label53.TabIndex = 70;
@@ -490,7 +490,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPreisvergleichSellMaxSecond.AutoSize = true;
             this.lblPreisvergleichSellMaxSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellMaxSecond.Location = new System.Drawing.Point(589, 316);
+            this.lblPreisvergleichSellMaxSecond.Location = new System.Drawing.Point(527, 316);
             this.lblPreisvergleichSellMaxSecond.Name = "lblPreisvergleichSellMaxSecond";
             this.lblPreisvergleichSellMaxSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellMaxSecond.TabIndex = 68;
@@ -501,7 +501,7 @@
             this.lblPreisvergleichSellMaxOne.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichSellMaxOne.AutoSize = true;
             this.lblPreisvergleichSellMaxOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellMaxOne.Location = new System.Drawing.Point(202, 316);
+            this.lblPreisvergleichSellMaxOne.Location = new System.Drawing.Point(171, 316);
             this.lblPreisvergleichSellMaxOne.Name = "lblPreisvergleichSellMaxOne";
             this.lblPreisvergleichSellMaxOne.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellMaxOne.TabIndex = 67;
@@ -512,7 +512,7 @@
             this.lblPreisvergleichBuyMaxSecond.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichBuyMaxSecond.AutoSize = true;
             this.lblPreisvergleichBuyMaxSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichBuyMaxSecond.Location = new System.Drawing.Point(397, 316);
+            this.lblPreisvergleichBuyMaxSecond.Location = new System.Drawing.Point(366, 316);
             this.lblPreisvergleichBuyMaxSecond.Name = "lblPreisvergleichBuyMaxSecond";
             this.lblPreisvergleichBuyMaxSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichBuyMaxSecond.TabIndex = 66;
@@ -535,7 +535,7 @@
             this.label61.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(397, 300);
+            this.label61.Location = new System.Drawing.Point(366, 300);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(165, 16);
             this.label61.TabIndex = 62;
@@ -559,7 +559,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPreisvergleichSellPercentileSecond.AutoSize = true;
             this.lblPreisvergleichSellPercentileSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellPercentileSecond.Location = new System.Drawing.Point(589, 274);
+            this.lblPreisvergleichSellPercentileSecond.Location = new System.Drawing.Point(527, 274);
             this.lblPreisvergleichSellPercentileSecond.Name = "lblPreisvergleichSellPercentileSecond";
             this.lblPreisvergleichSellPercentileSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellPercentileSecond.TabIndex = 60;
@@ -570,7 +570,7 @@
             this.lblPreisvergleichSellPercentileOne.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichSellPercentileOne.AutoSize = true;
             this.lblPreisvergleichSellPercentileOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellPercentileOne.Location = new System.Drawing.Point(203, 274);
+            this.lblPreisvergleichSellPercentileOne.Location = new System.Drawing.Point(172, 274);
             this.lblPreisvergleichSellPercentileOne.Name = "lblPreisvergleichSellPercentileOne";
             this.lblPreisvergleichSellPercentileOne.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellPercentileOne.TabIndex = 59;
@@ -581,7 +581,7 @@
             this.lblPreisvergleichBuyPercentileSecond.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichBuyPercentileSecond.AutoSize = true;
             this.lblPreisvergleichBuyPercentileSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichBuyPercentileSecond.Location = new System.Drawing.Point(397, 274);
+            this.lblPreisvergleichBuyPercentileSecond.Location = new System.Drawing.Point(366, 274);
             this.lblPreisvergleichBuyPercentileSecond.Name = "lblPreisvergleichBuyPercentileSecond";
             this.lblPreisvergleichBuyPercentileSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichBuyPercentileSecond.TabIndex = 58;
@@ -604,7 +604,7 @@
             this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(399, 258);
+            this.label37.Location = new System.Drawing.Point(368, 258);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(81, 16);
             this.label37.TabIndex = 54;
@@ -628,7 +628,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPreisvergleichSellMedianSecond.AutoSize = true;
             this.lblPreisvergleichSellMedianSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellMedianSecond.Location = new System.Drawing.Point(590, 232);
+            this.lblPreisvergleichSellMedianSecond.Location = new System.Drawing.Point(528, 232);
             this.lblPreisvergleichSellMedianSecond.Name = "lblPreisvergleichSellMedianSecond";
             this.lblPreisvergleichSellMedianSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellMedianSecond.TabIndex = 52;
@@ -639,7 +639,7 @@
             this.lblPreisvergleichSellMedianOne.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichSellMedianOne.AutoSize = true;
             this.lblPreisvergleichSellMedianOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellMedianOne.Location = new System.Drawing.Point(202, 232);
+            this.lblPreisvergleichSellMedianOne.Location = new System.Drawing.Point(171, 232);
             this.lblPreisvergleichSellMedianOne.Name = "lblPreisvergleichSellMedianOne";
             this.lblPreisvergleichSellMedianOne.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellMedianOne.TabIndex = 51;
@@ -650,7 +650,7 @@
             this.lblPreisvergleichBuyMedianSecond.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichBuyMedianSecond.AutoSize = true;
             this.lblPreisvergleichBuyMedianSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichBuyMedianSecond.Location = new System.Drawing.Point(397, 232);
+            this.lblPreisvergleichBuyMedianSecond.Location = new System.Drawing.Point(366, 232);
             this.lblPreisvergleichBuyMedianSecond.Name = "lblPreisvergleichBuyMedianSecond";
             this.lblPreisvergleichBuyMedianSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichBuyMedianSecond.TabIndex = 50;
@@ -673,7 +673,7 @@
             this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(398, 216);
+            this.label45.Location = new System.Drawing.Point(367, 216);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(62, 16);
             this.label45.TabIndex = 46;
@@ -697,7 +697,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPreisvergleichSellStddevSecond.AutoSize = true;
             this.lblPreisvergleichSellStddevSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellStddevSecond.Location = new System.Drawing.Point(590, 191);
+            this.lblPreisvergleichSellStddevSecond.Location = new System.Drawing.Point(528, 191);
             this.lblPreisvergleichSellStddevSecond.Name = "lblPreisvergleichSellStddevSecond";
             this.lblPreisvergleichSellStddevSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellStddevSecond.TabIndex = 44;
@@ -708,7 +708,7 @@
             this.lblPreisvergleichSellStddevOne.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichSellStddevOne.AutoSize = true;
             this.lblPreisvergleichSellStddevOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellStddevOne.Location = new System.Drawing.Point(202, 191);
+            this.lblPreisvergleichSellStddevOne.Location = new System.Drawing.Point(171, 191);
             this.lblPreisvergleichSellStddevOne.Name = "lblPreisvergleichSellStddevOne";
             this.lblPreisvergleichSellStddevOne.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellStddevOne.TabIndex = 43;
@@ -719,7 +719,7 @@
             this.lblPreisvergleichBuyStddevSecond.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichBuyStddevSecond.AutoSize = true;
             this.lblPreisvergleichBuyStddevSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichBuyStddevSecond.Location = new System.Drawing.Point(398, 191);
+            this.lblPreisvergleichBuyStddevSecond.Location = new System.Drawing.Point(367, 191);
             this.lblPreisvergleichBuyStddevSecond.Name = "lblPreisvergleichBuyStddevSecond";
             this.lblPreisvergleichBuyStddevSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichBuyStddevSecond.TabIndex = 42;
@@ -742,7 +742,7 @@
             this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(398, 175);
+            this.label29.Location = new System.Drawing.Point(367, 175);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(60, 16);
             this.label29.TabIndex = 38;
@@ -766,7 +766,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPreisvergleichSellAvgSecond.AutoSize = true;
             this.lblPreisvergleichSellAvgSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellAvgSecond.Location = new System.Drawing.Point(589, 149);
+            this.lblPreisvergleichSellAvgSecond.Location = new System.Drawing.Point(527, 149);
             this.lblPreisvergleichSellAvgSecond.Name = "lblPreisvergleichSellAvgSecond";
             this.lblPreisvergleichSellAvgSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellAvgSecond.TabIndex = 36;
@@ -777,7 +777,7 @@
             this.lblPreisvergleichSellAvgOne.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichSellAvgOne.AutoSize = true;
             this.lblPreisvergleichSellAvgOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichSellAvgOne.Location = new System.Drawing.Point(202, 149);
+            this.lblPreisvergleichSellAvgOne.Location = new System.Drawing.Point(171, 149);
             this.lblPreisvergleichSellAvgOne.Name = "lblPreisvergleichSellAvgOne";
             this.lblPreisvergleichSellAvgOne.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichSellAvgOne.TabIndex = 35;
@@ -788,7 +788,7 @@
             this.lblPreisvergleichBuyAvgSecond.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichBuyAvgSecond.AutoSize = true;
             this.lblPreisvergleichBuyAvgSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichBuyAvgSecond.Location = new System.Drawing.Point(398, 149);
+            this.lblPreisvergleichBuyAvgSecond.Location = new System.Drawing.Point(367, 149);
             this.lblPreisvergleichBuyAvgSecond.Name = "lblPreisvergleichBuyAvgSecond";
             this.lblPreisvergleichBuyAvgSecond.Size = new System.Drawing.Size(16, 16);
             this.lblPreisvergleichBuyAvgSecond.TabIndex = 34;
@@ -811,7 +811,7 @@
             this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(397, 133);
+            this.label17.Location = new System.Drawing.Point(366, 133);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(95, 16);
             this.label17.TabIndex = 30;
@@ -835,7 +835,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSellSecond.AutoSize = true;
             this.lblSellSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSellSecond.Location = new System.Drawing.Point(590, 108);
+            this.lblSellSecond.Location = new System.Drawing.Point(528, 108);
             this.lblSellSecond.Name = "lblSellSecond";
             this.lblSellSecond.Size = new System.Drawing.Size(64, 16);
             this.lblSellSecond.TabIndex = 28;
@@ -846,7 +846,7 @@
             this.lblSellOne.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblSellOne.AutoSize = true;
             this.lblSellOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSellOne.Location = new System.Drawing.Point(202, 108);
+            this.lblSellOne.Location = new System.Drawing.Point(171, 108);
             this.lblSellOne.Name = "lblSellOne";
             this.lblSellOne.Size = new System.Drawing.Size(64, 16);
             this.lblSellOne.TabIndex = 27;
@@ -857,7 +857,7 @@
             this.lblBuySecond.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblBuySecond.AutoSize = true;
             this.lblBuySecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuySecond.Location = new System.Drawing.Point(398, 108);
+            this.lblBuySecond.Location = new System.Drawing.Point(367, 108);
             this.lblBuySecond.Name = "lblBuySecond";
             this.lblBuySecond.Size = new System.Drawing.Size(41, 16);
             this.lblBuySecond.TabIndex = 26;
@@ -2178,7 +2178,7 @@
             this.cbPreisvergleichItem.Location = new System.Drawing.Point(80, 8);
             this.cbPreisvergleichItem.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.cbPreisvergleichItem.Name = "cbPreisvergleichItem";
-            this.cbPreisvergleichItem.Size = new System.Drawing.Size(318, 21);
+            this.cbPreisvergleichItem.Size = new System.Drawing.Size(256, 21);
             this.cbPreisvergleichItem.TabIndex = 24;
             this.cbPreisvergleichItem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbPreisvergleichItem_KeyDown);
             // 
@@ -2187,7 +2187,7 @@
             this.lblPreisvergleichMarktZwei.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPreisvergleichMarktZwei.AutoSize = true;
             this.lblPreisvergleichMarktZwei.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisvergleichMarktZwei.Location = new System.Drawing.Point(395, 88);
+            this.lblPreisvergleichMarktZwei.Location = new System.Drawing.Point(364, 88);
             this.lblPreisvergleichMarktZwei.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPreisvergleichMarktZwei.Name = "lblPreisvergleichMarktZwei";
             this.lblPreisvergleichMarktZwei.Size = new System.Drawing.Size(159, 13);
@@ -2215,7 +2215,7 @@
             this.cbPreisvergleichMarktZwei.FormattingEnabled = true;
             this.cbPreisvergleichMarktZwei.Location = new System.Drawing.Point(80, 53);
             this.cbPreisvergleichMarktZwei.Name = "cbPreisvergleichMarktZwei";
-            this.cbPreisvergleichMarktZwei.Size = new System.Drawing.Size(318, 21);
+            this.cbPreisvergleichMarktZwei.Size = new System.Drawing.Size(256, 21);
             this.cbPreisvergleichMarktZwei.TabIndex = 21;
             this.cbPreisvergleichMarktZwei.SelectedIndexChanged += new System.EventHandler(this.cbPreisvergleichMarktZwei_SelectedIndexChanged);
             // 
@@ -2227,7 +2227,7 @@
             this.cbPreisvergleichMarktEins.FormattingEnabled = true;
             this.cbPreisvergleichMarktEins.Location = new System.Drawing.Point(80, 30);
             this.cbPreisvergleichMarktEins.Name = "cbPreisvergleichMarktEins";
-            this.cbPreisvergleichMarktEins.Size = new System.Drawing.Size(318, 21);
+            this.cbPreisvergleichMarktEins.Size = new System.Drawing.Size(256, 21);
             this.cbPreisvergleichMarktEins.TabIndex = 20;
             this.cbPreisvergleichMarktEins.SelectedIndexChanged += new System.EventHandler(this.cbPreisvergleichMarktEins_SelectedIndexChanged);
             // 
