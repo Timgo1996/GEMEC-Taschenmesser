@@ -99,6 +99,17 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lblPreisrechnerGesamtSell = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dgvPreisrechner = new System.Windows.Forms.DataGridView();
+            this.cbPreisrechnerMarkt = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnPreisrechnerBerechnen = new System.Windows.Forms.Button();
+            this.txtPreisrechnerItems = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lblPreisrechnerGesamtBuy = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerBelohnung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerVersicherung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerGesamtkubik)).BeginInit();
@@ -106,6 +117,8 @@
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogistikRechnerListeLeeren)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPreisrechner)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -308,6 +321,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(-2, 0);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(1);
             this.tabControl1.MinimumSize = new System.Drawing.Size(840, 412);
@@ -2261,6 +2275,123 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Item Name:";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.DimGray;
+            this.tabPage3.Controls.Add(this.lblPreisrechnerGesamtBuy);
+            this.tabPage3.Controls.Add(this.label14);
+            this.tabPage3.Controls.Add(this.lblPreisrechnerGesamtSell);
+            this.tabPage3.Controls.Add(this.label13);
+            this.tabPage3.Controls.Add(this.dgvPreisrechner);
+            this.tabPage3.Controls.Add(this.cbPreisrechnerMarkt);
+            this.tabPage3.Controls.Add(this.label12);
+            this.tabPage3.Controls.Add(this.btnPreisrechnerBerechnen);
+            this.tabPage3.Controls.Add(this.txtPreisrechnerItems);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(832, 386);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Preisrechner";
+            // 
+            // lblPreisrechnerGesamtSell
+            // 
+            this.lblPreisrechnerGesamtSell.AutoSize = true;
+            this.lblPreisrechnerGesamtSell.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisrechnerGesamtSell.Location = new System.Drawing.Point(364, 349);
+            this.lblPreisrechnerGesamtSell.Name = "lblPreisrechnerGesamtSell";
+            this.lblPreisrechnerGesamtSell.Size = new System.Drawing.Size(16, 13);
+            this.lblPreisrechnerGesamtSell.TabIndex = 7;
+            this.lblPreisrechnerGesamtSell.Text = "...";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(241, 349);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(117, 13);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "Gesamt Verkauf in ISK:";
+            // 
+            // dgvPreisrechner
+            // 
+            this.dgvPreisrechner.AllowUserToAddRows = false;
+            this.dgvPreisrechner.AllowUserToDeleteRows = false;
+            this.dgvPreisrechner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPreisrechner.Location = new System.Drawing.Point(244, 6);
+            this.dgvPreisrechner.Name = "dgvPreisrechner";
+            this.dgvPreisrechner.ReadOnly = true;
+            this.dgvPreisrechner.Size = new System.Drawing.Size(582, 340);
+            this.dgvPreisrechner.TabIndex = 5;
+            // 
+            // cbPreisrechnerMarkt
+            // 
+            this.cbPreisrechnerMarkt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPreisrechnerMarkt.FormattingEnabled = true;
+            this.cbPreisrechnerMarkt.Location = new System.Drawing.Point(6, 315);
+            this.cbPreisrechnerMarkt.Name = "cbPreisrechnerMarkt";
+            this.cbPreisrechnerMarkt.Size = new System.Drawing.Size(232, 21);
+            this.cbPreisrechnerMarkt.TabIndex = 4;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 299);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 13);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Markt:";
+            // 
+            // btnPreisrechnerBerechnen
+            // 
+            this.btnPreisrechnerBerechnen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreisrechnerBerechnen.Location = new System.Drawing.Point(6, 342);
+            this.btnPreisrechnerBerechnen.Name = "btnPreisrechnerBerechnen";
+            this.btnPreisrechnerBerechnen.Size = new System.Drawing.Size(232, 38);
+            this.btnPreisrechnerBerechnen.TabIndex = 2;
+            this.btnPreisrechnerBerechnen.Text = "Berechnen";
+            this.btnPreisrechnerBerechnen.UseVisualStyleBackColor = true;
+            this.btnPreisrechnerBerechnen.Click += new System.EventHandler(this.btnPreisrechnerBerechnen_Click);
+            // 
+            // txtPreisrechnerItems
+            // 
+            this.txtPreisrechnerItems.Location = new System.Drawing.Point(6, 19);
+            this.txtPreisrechnerItems.Multiline = true;
+            this.txtPreisrechnerItems.Name = "txtPreisrechnerItems";
+            this.txtPreisrechnerItems.Size = new System.Drawing.Size(232, 277);
+            this.txtPreisrechnerItems.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 3);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(35, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Items:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(241, 367);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(102, 13);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Gesamt Kauf in ISK:";
+            // 
+            // lblPreisrechnerGesamtBuy
+            // 
+            this.lblPreisrechnerGesamtBuy.AutoSize = true;
+            this.lblPreisrechnerGesamtBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisrechnerGesamtBuy.Location = new System.Drawing.Point(364, 367);
+            this.lblPreisrechnerGesamtBuy.Name = "lblPreisrechnerGesamtBuy";
+            this.lblPreisrechnerGesamtBuy.Size = new System.Drawing.Size(16, 13);
+            this.lblPreisrechnerGesamtBuy.TabIndex = 9;
+            this.lblPreisrechnerGesamtBuy.Text = "...";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2282,6 +2413,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogistikRechnerListeLeeren)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPreisrechner)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2358,6 +2492,17 @@
         private System.Windows.Forms.Label lblPreisvergleichBuyAvgSecond;
         private System.Windows.Forms.Label lblPreisvergleichBuyAvgOne;
         private System.Windows.Forms.PictureBox pbLogistikRechnerListeLeeren;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label lblPreisrechnerGesamtSell;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DataGridView dgvPreisrechner;
+        private System.Windows.Forms.ComboBox cbPreisrechnerMarkt;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnPreisrechnerBerechnen;
+        private System.Windows.Forms.TextBox txtPreisrechnerItems;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblPreisrechnerGesamtBuy;
+        private System.Windows.Forms.Label label14;
     }
 }
 

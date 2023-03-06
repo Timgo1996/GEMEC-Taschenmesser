@@ -29,22 +29,23 @@ namespace GEMEC_Logistics
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            setValuesToZero();
+            setPreisvergleichValuesToZero();
 
             if (txtLogistikRechnerTransportItems.Text != "")
             {
-               if (getValuesForTextboxes() == false)
+                if (getValuesForTextboxes() == false)
                 {
                     MessageBox.Show("Daten konnten nicht ausgewertet werden. Bitte füge einen korrekten Datensatz ein!", "Daten nicht korrekt", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    setValuesToZero() ;
+                    setPreisvergleichValuesToZero();
                 }
-            } else
+            }
+            else
             {
-                setValuesToZero();
-                MessageBox.Show("Trag was beim Transport ein du Depp!","Transport Items fehlen",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                setPreisvergleichValuesToZero();
+                MessageBox.Show("Trag was beim Transport ein du Depp!", "Transport Items fehlen", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            txtLogistikRechnerBelohnung.Text = gesamtBelohnung.ToString().Replace(",",".");
+            txtLogistikRechnerBelohnung.Text = gesamtBelohnung.ToString().Replace(",", ".");
             txtLogistikRechnerGesamtkubikmeter.Text = gesamtKubikmeter.ToString().Replace(",", ".");
             txtLogistikRechnerVersicherung.Text = gesamtVersicherung.ToString().Replace(",", ".");
         }
@@ -53,7 +54,7 @@ namespace GEMEC_Logistics
         {
             string[] items = txtLogistikRechnerTransportItems.Lines.ToArray();
             string seperator = "\t";
-            
+
             try
             {
                 foreach (string item in items)
@@ -87,7 +88,7 @@ namespace GEMEC_Logistics
                 {
                     decimal transportGrenzenDifferenz = gesamtKubikmeter - 335000;
                     MessageBox.Show("Die maximale Transportkapazität beträgt 335000m³. Deine liegt bei " + gesamtKubikmeter.ToString() + "m³ und übersteigt diese mit " + transportGrenzenDifferenz.ToString() + "m³.", "Transportkapazitätslimit überschritten", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    setValuesToZero();
+                    setPreisvergleichValuesToZero();
                     return true;
                 }
                 gesamtBelohnung = gesamtKubikmeter * 300;
@@ -100,7 +101,7 @@ namespace GEMEC_Logistics
             return true;
         }
 
-        private void setValuesToZero()
+        private void setPreisvergleichValuesToZero()
         {
             gesamtBelohnung = 0;
             gesamtKubikmeter = 0;
@@ -175,18 +176,20 @@ namespace GEMEC_Logistics
             {
                 cbPreisvergleichMarktEins.Items.Add(station.stationName);
                 cbPreisvergleichMarktZwei.Items.Add(station.stationName);
+                cbPreisrechnerMarkt.Items.Add(station.stationName);
             }
 
             cbPreisvergleichMarktEins.SelectedIndex = 0;
             cbPreisvergleichMarktZwei.SelectedIndex = 1;
+            cbPreisrechnerMarkt.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             btnPreisvergleichVergleich.BackColor = Color.Transparent;
-            if(cbPreisvergleichItem.Text != "")
+            if (cbPreisvergleichItem.Text != "")
             {
-                getDataToCompare();
+                getPreisvergleichDataToCompare();
             }
             else
             {
@@ -200,44 +203,45 @@ namespace GEMEC_Logistics
             List<Models.SingleItem.RootEvEItem> eveItemInfos = new List<Models.SingleItem.RootEvEItem>();
             EvEMarketerAPI eveMarketerInstance = new EvEMarketerAPI();
 
-                if (searchItemIDs.Count != 0 && stationIDs.Count == 2)
+            if (searchItemIDs.Count != 0 && stationIDs.Count == 2)
+            {
+                try
                 {
-                    try
+                    foreach (var stationID in stationIDs)
                     {
-                        foreach (var stationID in stationIDs)
-                        {
-                            eveItemInfos.Add(await eveMarketerInstance.getSingleItemPricesAsync(searchItemIDs, stationID));
-                        }
+                        eveItemInfos.Add(await eveMarketerInstance.getSingleItemPricesAsync(searchItemIDs, stationID));
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                        throw;
-                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    throw;
+                }
+            }
+            else
+            {
+                return null;
+            }
+            return eveItemInfos;
+        }
+
+        private async void getPreisvergleichDataToCompare()
+        {
+            List<int> stationIDs = await getPreisvergleichStationNameByStationID();
+
+            if (stationIDs.Count != 0 && stationIDs != null)
+            {
+                List<Models.SingleItem.RootEvEItem> marktItemInfos = await getItemPriceToCompareData(stationIDs);
+
+                if (marktItemInfos != null)
+                {
+                    setItemsToLabels(marktItemInfos);
                 }
                 else
                 {
-                    return null;
-                }
-            return eveItemInfos;
-        }
-        
-        private async void getDataToCompare()
-        {
-            List<int> stationIDs = await getStationNameByStationID();
-
-            if(stationIDs.Count != 0 && stationIDs != null)
-            {
-                List<Models.SingleItem.RootEvEItem> marktItemInfos = await getItemPriceToCompareData(stationIDs);
-                
-                if(marktItemInfos != null)
-                {
-                    setItemsToLabels(marktItemInfos);
-                } else
-                {
                     MessageBox.Show("Das angegebene Item konnte nicht gefunden werden!", "Item konnte nicht gefunden werden", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-            } 
+            }
             else
             {
                 MessageBox.Show("Ein Fehler ist aufgetreten. Ihre Daten konnten nicht verglichen werden!", "Daten konnten nicht verglichen werden", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -324,7 +328,7 @@ namespace GEMEC_Logistics
             }
         }
 
-        private async Task<List<int>> getStationNameByStationID()
+        private async Task<List<int>> getPreisvergleichStationNameByStationID()
         {
             List<int> itemIDs = new List<int>();
 
@@ -335,7 +339,8 @@ namespace GEMEC_Logistics
             {
                 itemIDs.Add(marktEinsResult.ID);
                 itemIDs.Add(marktZweiResult.ID);
-            } else
+            }
+            else
             {
                 MessageBox.Show("Bitte wählen Sie nur eine verfügbare Station aus. Zu mindestens einer deiner ausgewählten Stationen liegen uns keine Daten vor.");
                 return null;
@@ -349,8 +354,8 @@ namespace GEMEC_Logistics
             List<int> itemIDs = new List<int>();
 
             var result = eveItemValueIDs.Where(itm => itm.itemName.ToUpper() == cbPreisvergleichItem.Text.ToUpper());
-            
-            foreach ( var item in result )
+
+            foreach (var item in result)
             {
                 itemIDs.Add(item.typeID);
             }
@@ -380,8 +385,140 @@ namespace GEMEC_Logistics
         {
             txtLogistikRechnerTransportItems.Text = "";
         }
+
+        private void btnPreisrechnerBerechnen_Click(object sender, EventArgs e)
+        {
+            PreisvergleichDoTheMagic();
+        }
+
+        private async void PreisvergleichDoTheMagic()
+        {
+            if (txtPreisrechnerItems.Text != "")
+            {
+                List<PreisrechnerCustomObject> rootEvEItems = new List<PreisrechnerCustomObject>();
+                rootEvEItems = await PreisrechnerBerechneItemKosten();
+
+                if (rootEvEItems.Count != null)
+                {
+                    foreach (var item in rootEvEItems)
+                    {
+                        //TODO: Hier Daten aufbereiten
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Daten konnten nicht ausgewertet werden. Bitte füge einen korrekten Datensatz ein!", "Daten nicht korrekt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bitte fügen Sie Item(s) in die Textbox ein!", "Keine Items eingetragen", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private async Task<List<PreisrechnerCustomObject>> PreisrechnerBerechneItemKosten()
+        {
+            List<PreisrechnerCustomObject> rootEvEItems = new List<PreisrechnerCustomObject>();
+            string[] items = txtPreisrechnerItems.Lines.ToArray();
+            string seperator = "\t";
+
+            try
+            {
+                int stationID = await PreisrechnerGetStationIDByStationName();
+                
+
+                if (stationID != 0)
+                {
+                    foreach (string item in items)
+                    {
+                        string[] itemValues = item.Split(seperator.ToCharArray());
+                        itemValues = itemValues.Where(x => !string.IsNullOrEmpty(x)).ToArray();
+
+                        if (itemValues.Length == 0)
+                        {
+                            return null;
+                        }
+                        PreisrechnerCustomObject myObject = new PreisrechnerCustomObject();
+                        myObject.stringItemName = itemValues[0];
+                        try
+                        {
+                            myObject.intQuantity = Convert.ToInt32(itemValues[1]);
+                        }
+                        catch (Exception)
+                        {
+                            myObject.intQuantity = 1;
+                        }
+                        myObject.rootEvEItemeveItem = await PreisrechnerGetDataToCompare(stationID, itemValues[0].Replace("*", ""));
+
+                        rootEvEItems.Add(myObject);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            return rootEvEItems;
+        }
+
+        private async Task<Models.SingleItem.RootEvEItem> PreisrechnerGetDataToCompare(int stationID, string searchItemName)
+        {
+            Models.SingleItem.RootEvEItem marktItemInfos = await PreisrechnerGetItemPriceToCompareData(stationID, searchItemName);
+
+            if (marktItemInfos != null)
+            {
+                return marktItemInfos;
+            }
+            else
+            {
+                MessageBox.Show("Das angegebene Item konnte nicht gefunden werden!", "Item konnte nicht gefunden werden", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null;
+            }
+        }
+
+        private async Task<int> PreisrechnerGetStationIDByStationName()
+        {
+            int itemIDs = 0;
+
+            var marktResult = eveStationValueIDs.Where(itm => itm.stationName == cbPreisrechnerMarkt.Text).FirstOrDefault();
+
+            if (marktResult != null)
+            {
+                return marktResult.ID;
+            }
+            else
+            {
+                MessageBox.Show("Bitte wählen Sie eine verfügbare Station aus. Zu deiner ausgewählten Stationen liegen uns keine Daten vor.", "Stationsdaten nicht verfügbar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return 0;
+            }
+        }
+
+        private async Task<Models.SingleItem.RootEvEItem> PreisrechnerGetItemPriceToCompareData(int stationID, string searchItemName)
+        {
+            int searchItemIDs = await PreisrechnerGetItemIDsByItemName(searchItemName);
+            Models.SingleItem.RootEvEItem eveItemInfos = new Models.SingleItem.RootEvEItem();
+            EvEMarketerAPI eveMarketerInstance = new EvEMarketerAPI();
+
+                try
+                {
+                        eveItemInfos = await eveMarketerInstance.PreisrechnerGetSingleItemPriceAsync(searchItemIDs, stationID);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    throw;
+                }
+            return eveItemInfos;
+        }
+
+        private async Task<int> PreisrechnerGetItemIDsByItemName(string itemName)
+        {
+            var result =  eveItemValueIDs.Where(itm => itm.itemName.ToUpper() == itemName.ToUpper()).FirstOrDefault();
+            return Convert.ToInt32(result.ID);
+        }
     }
 
+    
     public class EvEItemValues
     {
         public int ID { get; set; }
@@ -416,5 +553,19 @@ namespace GEMEC_Logistics
 
             return stationInfos;
         }
+    }
+
+    public struct PreisrechnerCustomObject
+    {
+        public PreisrechnerCustomObject(int quantity, string itemName, Models.SingleItem.RootEvEItem eveItem)
+        {
+            intQuantity = quantity;
+            stringItemName = itemName;
+            rootEvEItemeveItem = eveItem;
+        }
+
+        public int intQuantity { get; set; }
+        public string stringItemName { get; set; }
+        public Models.SingleItem.RootEvEItem rootEvEItemeveItem { get; set; }
     }
 }
