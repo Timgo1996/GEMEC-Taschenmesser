@@ -398,34 +398,66 @@ namespace GEMEC_Logistics
                 List<PreisrechnerCustomObject> rootEvEItems = new List<PreisrechnerCustomObject>();
                 rootEvEItems = await PreisrechnerBerechneItemKosten();
 
+                dgvPreisrechner.Rows.Clear();
+                dgvPreisrechner.Refresh();
+
                 if (rootEvEItems.Count != null)
                 {
                     //Clear old Data Source
                     dgvPreisrechner.DataSource = null;
                     dgvPreisrechner.Rows.Add();
+
+                    decimal kaufGesamtPreisMIN = 0;
+                    decimal kaufGesamtPreisAVG = 0;
+                    decimal kaufGesamtPreisMAX = 0;
+                    decimal verkaufGesamtPreisMIN = 0;
+                    decimal verkaufGesamtPreisAVG = 0;
+                    decimal verkaufGesamtPreisMAX = 0;
+
                     foreach (var item in rootEvEItems)
                     {
-                        
                         DataGridViewRow singlEvEItemDgvRow = (DataGridViewRow)dgvPreisrechner.Rows[0].Clone();
+
+                        decimal kaufPreisMIN = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.buy.min.Replace(".", ",")) * item.intQuantity;
+                        decimal kaufPreisAVG = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.buy.avg.Replace(".", ",")) * item.intQuantity;
+                        decimal kaufPreisMAX = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.buy.max.Replace(".", ",")) * item.intQuantity;
+                        decimal verkaufPreisMIN = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.sell.min.Replace(".", ",")) * item.intQuantity;
+                        decimal verkaufPreisAVG = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.sell.avg.Replace(".", ",")) * item.intQuantity;
+                        decimal verkaufPreisMAX = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.sell.max.Replace(".", ",")) * item.intQuantity;
+
+                        kaufGesamtPreisMIN += kaufPreisMIN;
+                        kaufGesamtPreisAVG += kaufPreisAVG;
+                        kaufGesamtPreisMAX += kaufPreisMAX;
+                        verkaufGesamtPreisMIN += verkaufPreisMIN;
+                        verkaufGesamtPreisAVG += verkaufPreisAVG;
+                        verkaufGesamtPreisMAX += verkaufPreisMAX;
 
                         singlEvEItemDgvRow.Cells[0].Value = item.stringItemName;
                         singlEvEItemDgvRow.Cells[1].Value = item.intQuantity;
-                        singlEvEItemDgvRow.Cells[2].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.min;
-                        singlEvEItemDgvRow.Cells[3].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.min;
-                        singlEvEItemDgvRow.Cells[4].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.avg;
-                        singlEvEItemDgvRow.Cells[5].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.avg;
-                        singlEvEItemDgvRow.Cells[6].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.max;
-                        singlEvEItemDgvRow.Cells[7].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.max;
-                        singlEvEItemDgvRow.Cells[8].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.buy.min) * item.intQuantity;
-                        singlEvEItemDgvRow.Cells[9].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.sell.min) * item.intQuantity;
-                        singlEvEItemDgvRow.Cells[10].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.buy.avg) * item.intQuantity;
-                        singlEvEItemDgvRow.Cells[11].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.sell.avg) * item.intQuantity;
-                        singlEvEItemDgvRow.Cells[12].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.buy.max) * item.intQuantity;
-                        singlEvEItemDgvRow.Cells[13].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.sell.max) * item.intQuantity;
+                        singlEvEItemDgvRow.Cells[2].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.min.Replace(".", "");
+                        singlEvEItemDgvRow.Cells[3].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.min.Replace(".", "");
+                        singlEvEItemDgvRow.Cells[4].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.avg.Replace(".", "");
+                        singlEvEItemDgvRow.Cells[5].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.avg.Replace(".", "");
+                        singlEvEItemDgvRow.Cells[6].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.max.Replace(".", "");
+                        singlEvEItemDgvRow.Cells[7].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.max.Replace(".", "");
+                        singlEvEItemDgvRow.Cells[8].Value = kaufPreisMIN;
+                        singlEvEItemDgvRow.Cells[9].Value = verkaufPreisMIN;
+                        singlEvEItemDgvRow.Cells[10].Value = kaufPreisAVG;
+                        singlEvEItemDgvRow.Cells[11].Value = verkaufPreisAVG;
+                        singlEvEItemDgvRow.Cells[12].Value = kaufPreisMAX;
+                        singlEvEItemDgvRow.Cells[13].Value = verkaufPreisMAX;
 
                         this.dgvPreisrechner.Rows.Add(singlEvEItemDgvRow);
                     }
+                    //Remove first dummy row
                     dgvPreisrechner.Rows.RemoveAt(0);
+
+                    lblPreisrechnerKaufMin.Text = kaufGesamtPreisMIN.ToString("N1");
+                    lblPreisrechnerKaufAvg.Text = kaufGesamtPreisAVG.ToString("N1");
+                    lblPreisrechnerKaufMax.Text = kaufGesamtPreisMAX.ToString("N1");
+                    lblPreisrechnerVerkaufMin.Text = verkaufGesamtPreisMIN.ToString("N1");
+                    lblPreisrechnerVerkaufAvg.Text = verkaufGesamtPreisAVG.ToString("N1");
+                    lblPreisrechnerVerkaufMax.Text = verkaufGesamtPreisMAX.ToString("N1");
 
                     // Set your desired AutoSize Mode:
                     for (int i = 0; i < 13; i++)
@@ -445,7 +477,6 @@ namespace GEMEC_Logistics
                         // Set Width to calculated AutoSize value:
                         dgvPreisrechner.Columns[i].Width = colw;
                     }
-
                 }
                 else
                 {
@@ -484,7 +515,7 @@ namespace GEMEC_Logistics
                         myObject.stringItemName = itemValues[0];
                         try
                         {
-                            myObject.intQuantity = Convert.ToInt32(itemValues[1]);
+                            myObject.intQuantity = Convert.ToInt32(itemValues[1].Replace(".",""));
                         }
                         catch (Exception)
                         {
