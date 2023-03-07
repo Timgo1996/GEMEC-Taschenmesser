@@ -589,9 +589,14 @@ namespace GEMEC_Logistics
             var result =  eveItemValueIDs.Where(itm => itm.itemName.ToUpper() == itemName.ToUpper()).FirstOrDefault();
             return Convert.ToInt32(result.ID);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            txtPreisrechnerItems.Text = "";
+        }
     }
 
-    
+
     public class EvEItemValues
     {
         public int ID { get; set; }

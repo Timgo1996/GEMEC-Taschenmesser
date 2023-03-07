@@ -100,6 +100,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblPreisrechnerVerkaufMax = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.lblPreisrechnerVerkaufAvg = new System.Windows.Forms.Label();
@@ -140,6 +141,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogistikRechnerListeLeeren)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPreisrechner)).BeginInit();
             this.SuspendLayout();
             // 
@@ -2300,6 +2302,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.DimGray;
+            this.tabPage3.Controls.Add(this.pictureBox1);
             this.tabPage3.Controls.Add(this.lblPreisrechnerVerkaufMax);
             this.tabPage3.Controls.Add(this.label21);
             this.tabPage3.Controls.Add(this.lblPreisrechnerVerkaufAvg);
@@ -2324,6 +2327,19 @@
             this.tabPage3.Size = new System.Drawing.Size(832, 386);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Preisrechner";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(95, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblPreisrechnerVerkaufMax
             // 
@@ -2480,7 +2496,7 @@
             this.AvgGesamtpreisVerkauf,
             this.MaxGesamtpreisKauf,
             this.MaxGesamtpreisVerkauf});
-            this.dgvPreisrechner.Location = new System.Drawing.Point(244, 6);
+            this.dgvPreisrechner.Location = new System.Drawing.Point(243, 6);
             this.dgvPreisrechner.Name = "dgvPreisrechner";
             this.dgvPreisrechner.ReadOnly = true;
             this.dgvPreisrechner.RowHeadersVisible = false;
@@ -2636,10 +2652,10 @@
             // 
             this.txtPreisrechnerItems.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtPreisrechnerItems.Location = new System.Drawing.Point(6, 19);
+            this.txtPreisrechnerItems.Location = new System.Drawing.Point(6, 34);
             this.txtPreisrechnerItems.Multiline = true;
             this.txtPreisrechnerItems.Name = "txtPreisrechnerItems";
-            this.txtPreisrechnerItems.Size = new System.Drawing.Size(232, 272);
+            this.txtPreisrechnerItems.Size = new System.Drawing.Size(232, 257);
             this.txtPreisrechnerItems.TabIndex = 1;
             // 
             // label11
@@ -2675,6 +2691,7 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPreisrechner)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -2785,6 +2802,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label lblPreisrechnerVerkaufMin;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
