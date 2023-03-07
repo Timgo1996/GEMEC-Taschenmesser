@@ -21,6 +21,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_1D5F1FC472AC492A9D5F6AE1A969A755"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_22059A2164DE40EC8A1D9B5416D4BBC1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -39,6 +45,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_78095FAA52244B85ADCA9C9A62BC4B96"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8643FB06AD3B46EEB9A0BAF0CEC02535"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -47,6 +59,12 @@
         {
         "MsmKey" = "8:_8F2BF357840BE8B561D47E0701BFC183"
         "OwnerKey" = "8:_35289DDCC169545FD75D0736BCEFBD2C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_91DAF3BC8CFC4BCF8046A76BFE89D428"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -217,6 +235,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1D5F1FC472AC492A9D5F6AE1A969A755"
+            {
+            "SourcePath" = "8:..\\GEMEC Logistics\\icon\\GEMEC-Logo_32x32.ico"
+            "TargetName" = "8:GEMEC-Logo_32x32.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_3734EF445E7A4D76B2F56373F836ECD0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_35289DDCC169545FD75D0736BCEFBD2C"
             {
             "AssemblyRegister" = "3:1"
@@ -254,6 +292,26 @@
             "TargetName" = "8:stationids.csv"
             "Tag" = "8:"
             "Folder" = "8:_544A0E53980B4CF1A9A8A4FF80910B82"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_78095FAA52244B85ADCA9C9A62BC4B96"
+            {
+            "SourcePath" = "8:..\\GEMEC Logistics\\icon\\Logo_2_32x32.png"
+            "TargetName" = "8:Logo_2_32x32.png"
+            "Tag" = "8:"
+            "Folder" = "8:_3734EF445E7A4D76B2F56373F836ECD0"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -319,6 +377,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_91DAF3BC8CFC4BCF8046A76BFE89D428"
+            {
+            "SourcePath" = "8:..\\GEMEC Logistics\\icon\\Logo_2.png"
+            "TargetName" = "8:Logo_2.png"
+            "Tag" = "8:"
+            "Folder" = "8:_3734EF445E7A4D76B2F56373F836ECD0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_958169E91E5C982D9410625FCCCA07F0"
             {
             "AssemblyRegister" = "3:1"
@@ -365,17 +443,6 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_8C7533A9031B4286A0E94F91C04CC8F2"
-                    {
-                    "Name" = "8:GEMEC Logistics"
-                    "AlwaysCreate" = "11:FALSE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_03AE6B25F0BF493CA2388313B8A486AA"
-                        "Folders"
-                        {
-                        }
-                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_982E4E51C1DD4A2E996F23F4DF0CFB50"
@@ -399,6 +466,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_3734EF445E7A4D76B2F56373F836ECD0"
+                    {
+                    "Name" = "8:icon"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_B630A7B4A2EE464BAD777AC19977BD98"
+                        "Folders"
+                        {
+                        }
+                    }
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_544A0E53980B4CF1A9A8A4FF80910B82"
                     {
                     "Name" = "8:Data"
@@ -560,7 +638,7 @@
             "Target" = "8:_22059A2164DE40EC8A1D9B5416D4BBC1"
             "Folder" = "8:_982E4E51C1DD4A2E996F23F4DF0CFB50"
             "WorkingFolder" = "8:_D0821FAE7C54467486233D30A1CC42F5"
-            "Icon" = "8:"
+            "Icon" = "8:_1D5F1FC472AC492A9D5F6AE1A969A755"
             "Feature" = "8:"
             }
         }
