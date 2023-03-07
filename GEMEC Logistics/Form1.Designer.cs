@@ -100,6 +100,16 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lblPreisrechnerVerkaufMax = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.lblPreisrechnerVerkaufAvg = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.lblPreisrechnerVerkaufMin = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.lblPreisrechnerKaufMax = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.lblPreisrechnerKaufAvg = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.lblPreisrechnerKaufMin = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dgvPreisrechner = new System.Windows.Forms.DataGridView();
@@ -122,16 +132,6 @@
             this.btnPreisrechnerBerechnen = new System.Windows.Forms.Button();
             this.txtPreisrechnerItems = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.lblPreisrechnerKaufAvg = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.lblPreisrechnerKaufMax = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.lblPreisrechnerVerkaufMax = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.lblPreisrechnerVerkaufAvg = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.lblPreisrechnerVerkaufMin = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerBelohnung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerVersicherung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbLogistikRechnerGesamtkubik)).BeginInit();
@@ -328,7 +328,7 @@
             // 
             this.btnPreisvergleichVergleich.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPreisvergleichVergleich.Location = new System.Drawing.Point(340, 26);
-            this.btnPreisvergleichVergleich.Margin = new System.Windows.Forms.Padding(1);
+            this.btnPreisvergleichVergleich.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnPreisvergleichVergleich.Name = "btnPreisvergleichVergleich";
             this.btnPreisvergleichVergleich.Size = new System.Drawing.Size(119, 26);
             this.btnPreisvergleichVergleich.TabIndex = 15;
@@ -345,7 +345,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(-2, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(1);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabControl1.MinimumSize = new System.Drawing.Size(840, 412);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -371,9 +371,9 @@
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.txtLogistikRechnerGesamtkubikmeter);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(1);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(1);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabPage1.Size = new System.Drawing.Size(832, 386);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "LogistikRechner";
@@ -444,9 +444,9 @@
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.btnPreisvergleichVergleich);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(1);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(1);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabPage2.Size = new System.Drawing.Size(832, 386);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Preisvergleich";
@@ -2212,7 +2212,7 @@
             "Gravimetric ECM II",
             "The Solitaire"});
             this.cbPreisvergleichItem.Location = new System.Drawing.Point(80, 8);
-            this.cbPreisvergleichItem.Margin = new System.Windows.Forms.Padding(1);
+            this.cbPreisvergleichItem.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.cbPreisvergleichItem.Name = "cbPreisvergleichItem";
             this.cbPreisvergleichItem.Size = new System.Drawing.Size(256, 21);
             this.cbPreisvergleichItem.TabIndex = 24;
@@ -2320,10 +2320,120 @@
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage3.Size = new System.Drawing.Size(832, 386);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Preisrechner";
+            // 
+            // lblPreisrechnerVerkaufMax
+            // 
+            this.lblPreisrechnerVerkaufMax.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblPreisrechnerVerkaufMax.AutoSize = true;
+            this.lblPreisrechnerVerkaufMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisrechnerVerkaufMax.Location = new System.Drawing.Point(640, 360);
+            this.lblPreisrechnerVerkaufMax.Name = "lblPreisrechnerVerkaufMax";
+            this.lblPreisrechnerVerkaufMax.Size = new System.Drawing.Size(21, 20);
+            this.lblPreisrechnerVerkaufMax.TabIndex = 19;
+            this.lblPreisrechnerVerkaufMax.Text = "...";
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(523, 362);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(108, 20);
+            this.label21.TabIndex = 18;
+            this.label21.Text = "Verkauf MAX:";
+            // 
+            // lblPreisrechnerVerkaufAvg
+            // 
+            this.lblPreisrechnerVerkaufAvg.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblPreisrechnerVerkaufAvg.AutoSize = true;
+            this.lblPreisrechnerVerkaufAvg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisrechnerVerkaufAvg.Location = new System.Drawing.Point(640, 327);
+            this.lblPreisrechnerVerkaufAvg.Name = "lblPreisrechnerVerkaufAvg";
+            this.lblPreisrechnerVerkaufAvg.Size = new System.Drawing.Size(21, 20);
+            this.lblPreisrechnerVerkaufAvg.TabIndex = 17;
+            this.lblPreisrechnerVerkaufAvg.Text = "...";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(526, 327);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(108, 20);
+            this.label23.TabIndex = 16;
+            this.label23.Text = "Verkauf AVG:";
+            // 
+            // lblPreisrechnerVerkaufMin
+            // 
+            this.lblPreisrechnerVerkaufMin.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblPreisrechnerVerkaufMin.AutoSize = true;
+            this.lblPreisrechnerVerkaufMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisrechnerVerkaufMin.Location = new System.Drawing.Point(640, 294);
+            this.lblPreisrechnerVerkaufMin.Name = "lblPreisrechnerVerkaufMin";
+            this.lblPreisrechnerVerkaufMin.Size = new System.Drawing.Size(21, 20);
+            this.lblPreisrechnerVerkaufMin.TabIndex = 15;
+            this.lblPreisrechnerVerkaufMin.Text = "...";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(526, 294);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(102, 20);
+            this.label25.TabIndex = 14;
+            this.label25.Text = "Verkauf MIN:";
+            // 
+            // lblPreisrechnerKaufMax
+            // 
+            this.lblPreisrechnerKaufMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblPreisrechnerKaufMax.AutoSize = true;
+            this.lblPreisrechnerKaufMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisrechnerKaufMax.Location = new System.Drawing.Point(325, 365);
+            this.lblPreisrechnerKaufMax.Name = "lblPreisrechnerKaufMax";
+            this.lblPreisrechnerKaufMax.Size = new System.Drawing.Size(21, 20);
+            this.lblPreisrechnerKaufMax.TabIndex = 13;
+            this.lblPreisrechnerKaufMax.Text = "...";
+            // 
+            // label20
+            // 
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(237, 365);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(85, 20);
+            this.label20.TabIndex = 12;
+            this.label20.Text = "Kauf MAX:";
+            // 
+            // lblPreisrechnerKaufAvg
+            // 
+            this.lblPreisrechnerKaufAvg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblPreisrechnerKaufAvg.AutoSize = true;
+            this.lblPreisrechnerKaufAvg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreisrechnerKaufAvg.Location = new System.Drawing.Point(325, 330);
+            this.lblPreisrechnerKaufAvg.Name = "lblPreisrechnerKaufAvg";
+            this.lblPreisrechnerKaufAvg.Size = new System.Drawing.Size(21, 20);
+            this.lblPreisrechnerKaufAvg.TabIndex = 11;
+            this.lblPreisrechnerKaufAvg.Text = "...";
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(240, 330);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(85, 20);
+            this.label16.TabIndex = 10;
+            this.label16.Text = "Kauf AVG:";
             // 
             // lblPreisrechnerKaufMin
             // 
@@ -2541,116 +2651,6 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Items:";
             // 
-            // lblPreisrechnerKaufAvg
-            // 
-            this.lblPreisrechnerKaufAvg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblPreisrechnerKaufAvg.AutoSize = true;
-            this.lblPreisrechnerKaufAvg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisrechnerKaufAvg.Location = new System.Drawing.Point(325, 330);
-            this.lblPreisrechnerKaufAvg.Name = "lblPreisrechnerKaufAvg";
-            this.lblPreisrechnerKaufAvg.Size = new System.Drawing.Size(21, 20);
-            this.lblPreisrechnerKaufAvg.TabIndex = 11;
-            this.lblPreisrechnerKaufAvg.Text = "...";
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(240, 330);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 20);
-            this.label16.TabIndex = 10;
-            this.label16.Text = "Kauf AVG:";
-            // 
-            // lblPreisrechnerKaufMax
-            // 
-            this.lblPreisrechnerKaufMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblPreisrechnerKaufMax.AutoSize = true;
-            this.lblPreisrechnerKaufMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisrechnerKaufMax.Location = new System.Drawing.Point(325, 365);
-            this.lblPreisrechnerKaufMax.Name = "lblPreisrechnerKaufMax";
-            this.lblPreisrechnerKaufMax.Size = new System.Drawing.Size(21, 20);
-            this.lblPreisrechnerKaufMax.TabIndex = 13;
-            this.lblPreisrechnerKaufMax.Text = "...";
-            // 
-            // label20
-            // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(237, 365);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(85, 20);
-            this.label20.TabIndex = 12;
-            this.label20.Text = "Kauf MAX:";
-            // 
-            // lblPreisrechnerVerkaufMax
-            // 
-            this.lblPreisrechnerVerkaufMax.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.lblPreisrechnerVerkaufMax.AutoSize = true;
-            this.lblPreisrechnerVerkaufMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisrechnerVerkaufMax.Location = new System.Drawing.Point(640, 360);
-            this.lblPreisrechnerVerkaufMax.Name = "lblPreisrechnerVerkaufMax";
-            this.lblPreisrechnerVerkaufMax.Size = new System.Drawing.Size(21, 20);
-            this.lblPreisrechnerVerkaufMax.TabIndex = 19;
-            this.lblPreisrechnerVerkaufMax.Text = "...";
-            // 
-            // label21
-            // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(523, 362);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(108, 20);
-            this.label21.TabIndex = 18;
-            this.label21.Text = "Verkauf MAX:";
-            // 
-            // lblPreisrechnerVerkaufAvg
-            // 
-            this.lblPreisrechnerVerkaufAvg.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.lblPreisrechnerVerkaufAvg.AutoSize = true;
-            this.lblPreisrechnerVerkaufAvg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisrechnerVerkaufAvg.Location = new System.Drawing.Point(640, 327);
-            this.lblPreisrechnerVerkaufAvg.Name = "lblPreisrechnerVerkaufAvg";
-            this.lblPreisrechnerVerkaufAvg.Size = new System.Drawing.Size(21, 20);
-            this.lblPreisrechnerVerkaufAvg.TabIndex = 17;
-            this.lblPreisrechnerVerkaufAvg.Text = "...";
-            // 
-            // label23
-            // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(526, 327);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(108, 20);
-            this.label23.TabIndex = 16;
-            this.label23.Text = "Verkauf AVG:";
-            // 
-            // lblPreisrechnerVerkaufMin
-            // 
-            this.lblPreisrechnerVerkaufMin.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.lblPreisrechnerVerkaufMin.AutoSize = true;
-            this.lblPreisrechnerVerkaufMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisrechnerVerkaufMin.Location = new System.Drawing.Point(640, 294);
-            this.lblPreisrechnerVerkaufMin.Name = "lblPreisrechnerVerkaufMin";
-            this.lblPreisrechnerVerkaufMin.Size = new System.Drawing.Size(21, 20);
-            this.lblPreisrechnerVerkaufMin.TabIndex = 15;
-            this.lblPreisrechnerVerkaufMin.Text = "...";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(526, 294);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(102, 20);
-            this.label25.TabIndex = 14;
-            this.label25.Text = "Verkauf MIN:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2659,6 +2659,7 @@
             this.ClientSize = new System.Drawing.Size(841, 414);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(857, 453);
             this.Name = "Form1";
             this.Text = "[GEMEC] Taschenmesser ";
