@@ -400,10 +400,52 @@ namespace GEMEC_Logistics
 
                 if (rootEvEItems.Count != null)
                 {
+                    //Clear old Data Source
+                    dgvPreisrechner.DataSource = null;
+                    dgvPreisrechner.Rows.Add();
                     foreach (var item in rootEvEItems)
                     {
-                        //TODO: Hier Daten aufbereiten
+                        
+                        DataGridViewRow singlEvEItemDgvRow = (DataGridViewRow)dgvPreisrechner.Rows[0].Clone();
+
+                        singlEvEItemDgvRow.Cells[0].Value = item.stringItemName;
+                        singlEvEItemDgvRow.Cells[1].Value = item.intQuantity;
+                        singlEvEItemDgvRow.Cells[2].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.min;
+                        singlEvEItemDgvRow.Cells[3].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.min;
+                        singlEvEItemDgvRow.Cells[4].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.avg;
+                        singlEvEItemDgvRow.Cells[5].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.avg;
+                        singlEvEItemDgvRow.Cells[6].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.max;
+                        singlEvEItemDgvRow.Cells[7].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.max;
+                        singlEvEItemDgvRow.Cells[8].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.buy.min) * item.intQuantity;
+                        singlEvEItemDgvRow.Cells[9].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.sell.min) * item.intQuantity;
+                        singlEvEItemDgvRow.Cells[10].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.buy.avg) * item.intQuantity;
+                        singlEvEItemDgvRow.Cells[11].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.sell.avg) * item.intQuantity;
+                        singlEvEItemDgvRow.Cells[12].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.buy.max) * item.intQuantity;
+                        singlEvEItemDgvRow.Cells[13].Value = Convert.ToDecimal(item.rootEvEItemeveItem.exec_api.marketstat.type.sell.max) * item.intQuantity;
+
+                        this.dgvPreisrechner.Rows.Add(singlEvEItemDgvRow);
                     }
+                    dgvPreisrechner.Rows.RemoveAt(0);
+
+                    // Set your desired AutoSize Mode:
+                    for (int i = 0; i < 13; i++)
+                    {
+                        dgvPreisrechner.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                    }
+
+                    // Now that DataGridView has calculated it's Widths; we can now store each column Width values.
+                    for (int i = 0; i <= dgvPreisrechner.Columns.Count - 1; i++)
+                    {
+                        // Store Auto Sized Widths:
+                        int colw = dgvPreisrechner.Columns[i].Width;
+
+                        // Remove AutoSizing:
+                        dgvPreisrechner.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+
+                        // Set Width to calculated AutoSize value:
+                        dgvPreisrechner.Columns[i].Width = colw;
+                    }
+
                 }
                 else
                 {
