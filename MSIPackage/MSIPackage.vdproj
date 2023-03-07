@@ -21,18 +21,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_19D335E763D0C00F34F85C30EA79EF7D"
-        "OwnerKey" = "8:_22059A2164DE40EC8A1D9B5416D4BBC1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_19D335E763D0C00F34F85C30EA79EF7D"
-        "OwnerKey" = "8:_12E86E543168499D8E043C3014A4A5D3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_1D5F1FC472AC492A9D5F6AE1A969A755"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -41,18 +29,6 @@
         {
         "MsmKey" = "8:_22059A2164DE40EC8A1D9B5416D4BBC1"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_35289DDCC169545FD75D0736BCEFBD2C"
-        "OwnerKey" = "8:_22059A2164DE40EC8A1D9B5416D4BBC1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_35289DDCC169545FD75D0736BCEFBD2C"
-        "OwnerKey" = "8:_12E86E543168499D8E043C3014A4A5D3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -75,68 +51,92 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8F2BF357840BE8B561D47E0701BFC183"
-        "OwnerKey" = "8:_35289DDCC169545FD75D0736BCEFBD2C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_91DAF3BC8CFC4BCF8046A76BFE89D428"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_958169E91E5C982D9410625FCCCA07F0"
-        "OwnerKey" = "8:_35289DDCC169545FD75D0736BCEFBD2C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_958169E91E5C982D9410625FCCCA07F0"
+        "MsmKey" = "8:_A4704CDA6A2C194E435FB5600CDF4534"
         "OwnerKey" = "8:_12E86E543168499D8E043C3014A4A5D3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_958169E91E5C982D9410625FCCCA07F0"
+        "MsmKey" = "8:_A4704CDA6A2C194E435FB5600CDF4534"
+        "OwnerKey" = "8:_22059A2164DE40EC8A1D9B5416D4BBC1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C26544B5F99ECFE38205DA9259185EED"
+        "OwnerKey" = "8:_CD880A3BAFD71CFFCACE11C199C94848"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CD880A3BAFD71CFFCACE11C199C94848"
+        "OwnerKey" = "8:_12E86E543168499D8E043C3014A4A5D3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CD880A3BAFD71CFFCACE11C199C94848"
+        "OwnerKey" = "8:_22059A2164DE40EC8A1D9B5416D4BBC1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D113D6C3B96D7B4E70FDFF3EB0472493"
+        "OwnerKey" = "8:_CD880A3BAFD71CFFCACE11C199C94848"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D113D6C3B96D7B4E70FDFF3EB0472493"
+        "OwnerKey" = "8:_22059A2164DE40EC8A1D9B5416D4BBC1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D113D6C3B96D7B4E70FDFF3EB0472493"
+        "OwnerKey" = "8:_12E86E543168499D8E043C3014A4A5D3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_22059A2164DE40EC8A1D9B5416D4BBC1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_22059A2164DE40EC8A1D9B5416D4BBC1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_12E86E543168499D8E043C3014A4A5D3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_35289DDCC169545FD75D0736BCEFBD2C"
+        "OwnerKey" = "8:_CD880A3BAFD71CFFCACE11C199C94848"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8F2BF357840BE8B561D47E0701BFC183"
+        "OwnerKey" = "8:_C26544B5F99ECFE38205DA9259185EED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_958169E91E5C982D9410625FCCCA07F0"
+        "OwnerKey" = "8:_D113D6C3B96D7B4E70FDFF3EB0472493"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_19D335E763D0C00F34F85C30EA79EF7D"
+        "OwnerKey" = "8:_A4704CDA6A2C194E435FB5600CDF4534"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -234,37 +234,6 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_19D335E763D0C00F34F85C30EA79EF7D"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_19D335E763D0C00F34F85C30EA79EF7D"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Net.Http.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D0821FAE7C54467486233D30A1CC42F5"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1D5F1FC472AC492A9D5F6AE1A969A755"
             {
             "SourcePath" = "8:..\\GEMEC Logistics\\icon\\GEMEC-Logo_32x32.ico"
@@ -283,37 +252,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_35289DDCC169545FD75D0736BCEFBD2C"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http.Formatting, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_35289DDCC169545FD75D0736BCEFBD2C"
-                    {
-                    "Name" = "8:System.Net.Http.Formatting.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Net.Http.Formatting.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D0821FAE7C54467486233D30A1CC42F5"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_546A78370B824DE5BAAD87A1DB0BB037"
@@ -376,37 +314,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8F2BF357840BE8B561D47E0701BFC183"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:TRUE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_8F2BF357840BE8B561D47E0701BFC183"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Net.Http.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D0821FAE7C54467486233D30A1CC42F5"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_91DAF3BC8CFC4BCF8046A76BFE89D428"
             {
             "SourcePath" = "8:..\\GEMEC Logistics\\icon\\Logo_2.png"
@@ -427,14 +334,107 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_958169E91E5C982D9410625FCCCA07F0"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A4704CDA6A2C194E435FB5600CDF4534"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_A4704CDA6A2C194E435FB5600CDF4534"
+                    {
+                    "Name" = "8:System.Net.Http.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Net.Http.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_1CF04618EAFE40A3B40C44D9A480A297"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C26544B5F99ECFE38205DA9259185EED"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:TRUE"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_C26544B5F99ECFE38205DA9259185EED"
+                    {
+                    "Name" = "8:System.Net.Http.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Net.Http.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_1CF04618EAFE40A3B40C44D9A480A297"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CD880A3BAFD71CFFCACE11C199C94848"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http.Formatting, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_CD880A3BAFD71CFFCACE11C199C94848"
+                    {
+                    "Name" = "8:System.Net.Http.Formatting.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Net.Http.Formatting.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D0821FAE7C54467486233D30A1CC42F5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D113D6C3B96D7B4E70FDFF3EB0472493"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_958169E91E5C982D9410625FCCCA07F0"
+                    "_D113D6C3B96D7B4E70FDFF3EB0472493"
                     {
                     "Name" = "8:Newtonsoft.Json.dll"
                     "Attributes" = "3:512"
@@ -536,15 +536,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GEMEC Taschenmesser"
-        "ProductCode" = "8:{75A46A6B-5082-412A-A04A-3472A9650CF5}"
-        "PackageCode" = "8:{CB597C9D-72B9-4C90-A286-ED02ADB2E463}"
+        "ProductCode" = "8:{C577184D-FB38-4C73-A94C-5A4BCD400C78}"
+        "PackageCode" = "8:{728F432D-C54F-400B-A1C1-13B3C92BBA38}"
         "UpgradeCode" = "8:{31A0F44D-F275-40E5-8671-D69552A88E3B}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:2.0.1"
+        "ProductVersion" = "8:2.0.2"
         "Manufacturer" = "8:GEMEC"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
