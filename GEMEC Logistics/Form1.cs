@@ -434,12 +434,12 @@ namespace GEMEC_Logistics
 
                         singlEvEItemDgvRow.Cells[0].Value = item.stringItemName;
                         singlEvEItemDgvRow.Cells[1].Value = item.intQuantity;
-                        singlEvEItemDgvRow.Cells[2].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.min.Replace(".", "");
-                        singlEvEItemDgvRow.Cells[3].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.min.Replace(".", "");
-                        singlEvEItemDgvRow.Cells[4].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.avg.Replace(".", "");
-                        singlEvEItemDgvRow.Cells[5].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.avg.Replace(".", "");
-                        singlEvEItemDgvRow.Cells[6].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.max.Replace(".", "");
-                        singlEvEItemDgvRow.Cells[7].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.max.Replace(".", "");
+                        singlEvEItemDgvRow.Cells[2].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.min.Replace(".", ",");
+                        singlEvEItemDgvRow.Cells[3].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.min.Replace(".", ",");
+                        singlEvEItemDgvRow.Cells[4].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.avg.Replace(".", ",");
+                        singlEvEItemDgvRow.Cells[5].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.avg.Replace(".", ",");
+                        singlEvEItemDgvRow.Cells[6].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.buy.max.Replace(".", ",");
+                        singlEvEItemDgvRow.Cells[7].Value = item.rootEvEItemeveItem.exec_api.marketstat.type.sell.max.Replace(".", ",");
                         singlEvEItemDgvRow.Cells[8].Value = kaufPreisMIN;
                         singlEvEItemDgvRow.Cells[9].Value = verkaufPreisMIN;
                         singlEvEItemDgvRow.Cells[10].Value = kaufPreisAVG;
