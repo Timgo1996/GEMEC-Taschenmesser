@@ -253,40 +253,40 @@ namespace GEMEC_Logistics
             try
             {
                 //Markt Eins mit Daten befüllen:
-                lblBuyOne.Text = "Kauf (" + marktItemInfos[0].exec_api.marketstat.type.buy.volume.ToString() + ")";
-                lblPreisvergleichBuyAvgOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.avg.ToString();
-                lblPreisvergleichBuyStddevOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.stddev.ToString();
-                lblPreisvergleichBuyMedianOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.median.ToString();
-                lblPreisvergleichBuyPercentileOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.percentile.ToString();
-                lblPreisvergleichBuyMaxOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.max.ToString();
-                lblPreisvergleichBuyMinOne.Text = marktItemInfos[0].exec_api.marketstat.type.buy.min.ToString();
+                lblBuyOne.Text = "Kauf (" + Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.buy.volume.Replace(".", ",")).ToString("N1") + ")";
+                lblPreisvergleichBuyAvgOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.buy.avg.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichBuyStddevOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.buy.stddev.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichBuyMedianOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.buy.median.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichBuyPercentileOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.buy.percentile.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichBuyMaxOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.buy.max.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichBuyMinOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.buy.min.Replace(".", ",")).ToString("N1");
 
-                lblSellOne.Text = "Verkauf (" + marktItemInfos[0].exec_api.marketstat.type.buy.volume.ToString() + ")";
-                lblPreisvergleichSellAvgOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.avg.ToString().Replace(".", ",");
-                lblPreisvergleichSellStddevOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.stddev.ToString().Replace(".", ",");
-                lblPreisvergleichSellMedianOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.median.ToString().Replace(".", ",");
-                lblPreisvergleichSellPercentileOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.percentile.ToString().Replace(".", ",");
-                lblPreisvergleichSellMaxOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.max.ToString().Replace(".", ",");
-                lblPreisvergleichSellMinOne.Text = marktItemInfos[0].exec_api.marketstat.type.sell.min.ToString().Replace(".", ",");
+                lblSellOne.Text = "Verkauf (" + Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.buy.volume.Replace(".", ",")).ToString("N1") + ")";
+                lblPreisvergleichSellAvgOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.sell.avg.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichSellStddevOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.sell.stddev.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichSellMedianOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.sell.median.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichSellPercentileOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.sell.percentile.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichSellMaxOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.sell.max.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichSellMinOne.Text = Convert.ToDecimal(marktItemInfos[0].exec_api.marketstat.type.sell.min.Replace(".", ",")).ToString("N1");
 
 
 
                 //Markt Zwei mit Daten befüllen:
-                lblBuySecond.Text = "Kauf (" + marktItemInfos[1].exec_api.marketstat.type.buy.volume.ToString() + ")";
-                lblPreisvergleichBuyAvgSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.avg.ToString().Replace(".", ",");
-                lblPreisvergleichBuyStddevSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.stddev.ToString().Replace(".", ",");
-                lblPreisvergleichBuyMedianSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.median.ToString().Replace(".", ",");
-                lblPreisvergleichBuyPercentileSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.percentile.ToString().Replace(".", ",");
-                lblPreisvergleichBuyMaxSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.max.ToString().Replace(".", ",");
-                lblPreisvergleichBuyMinSecond.Text = marktItemInfos[1].exec_api.marketstat.type.buy.min.ToString().Replace(".", ",");
+                lblBuySecond.Text = "Kauf (" + Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.buy.volume.Replace(".", ",")).ToString("N1") + ")";
+                lblPreisvergleichBuyAvgSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.buy.avg.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichBuyStddevSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.buy.stddev.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichBuyMedianSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.buy.median.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichBuyPercentileSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.buy.percentile.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichBuyMaxSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.buy.max.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichBuyMinSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.buy.min.Replace(".", ",")).ToString("N1");
 
-                lblSellSecond.Text = "Verkauf (" + marktItemInfos[1].exec_api.marketstat.type.buy.volume.ToString() + ")";
-                lblPreisvergleichSellAvgSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.avg.ToString().Replace(".", ",");
-                lblPreisvergleichSellStddevSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.stddev.ToString().Replace(".", ",");
-                lblPreisvergleichSellMedianSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.median.ToString().Replace(".", ",");
-                lblPreisvergleichSellPercentileSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.percentile.ToString().Replace(".", ",");
-                lblPreisvergleichSellMaxSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.max.ToString().Replace(".", ",");
-                lblPreisvergleichSellMinSecond.Text = marktItemInfos[1].exec_api.marketstat.type.sell.min.ToString().Replace(".", ",");
+                lblSellSecond.Text = "Verkauf (" + Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.buy.volume.Replace(".", ",")).ToString("N1") + ")";
+                lblPreisvergleichSellAvgSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.sell.avg.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichSellStddevSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.sell.stddev.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichSellMedianSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.sell.median.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichSellPercentileSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.sell.percentile.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichSellMaxSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.sell.max.Replace(".", ",")).ToString("N1");
+                lblPreisvergleichSellMinSecond.Text = Convert.ToDecimal(marktItemInfos[1].exec_api.marketstat.type.sell.min.Replace(".", ",")).ToString("N1");
             }
             catch (Exception)
             {
